@@ -7,13 +7,287 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D01E25B0238875BE4160082 /* Pods_FootBallNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D31CE84925F1BB3119EB56 /* Pods_FootBallNew.framework */; };
+		341E1E1ED709E35BAD688D77 /* Pods_FootBallNewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C03AE1E6F7C29870DE00A1F /* Pods_FootBallNewTests.framework */; };
+		6FF2D9A6BA6DB880A43097D0 /* Pods_FootBallNewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC8F1F9B983B84312765A88 /* Pods_FootBallNewUITests.framework */; };
+		846C82581D3405C0005467C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 846C82571D3405C0005467C7 /* GoogleService-Info.plist */; };
+		848FFB581D1E2554006E8BE6 /* PlayerInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFB571D1E2554006E8BE6 /* PlayerInfoController.swift */; };
+		848FFB631D1E2BB9006E8BE6 /* TextNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFB611D1E2BB9006E8BE6 /* TextNormalCell.swift */; };
+		848FFB641D1E2BB9006E8BE6 /* TextNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FFB621D1E2BB9006E8BE6 /* TextNormalCell.xib */; };
+		848FFB671D1E2D54006E8BE6 /* PlayerCareerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFB651D1E2D54006E8BE6 /* PlayerCareerCell.swift */; };
+		848FFB681D1E2D54006E8BE6 /* PlayerCareerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FFB661D1E2D54006E8BE6 /* PlayerCareerCell.xib */; };
+		848FFB6F1D1E5713006E8BE6 /* CareerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFB6E1D1E5713006E8BE6 /* CareerModel.swift */; };
+		848FFB711D1E6353006E8BE6 /* CareerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FFB701D1E6353006E8BE6 /* CareerHeaderView.swift */; };
+		848FFB731D1E636B006E8BE6 /* CareerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FFB721D1E636B006E8BE6 /* CareerHeaderView.xib */; };
+		8493574D1D1B66A300152A89 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8493574C1D1B66A300152A89 /* PlayerCell.swift */; };
+		84A844281D3560210057E0CD /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A844271D3560210057E0CD /* Post.m */; };
 		84A84C9F1D164EA50067B64D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84C9E1D164EA50067B64D /* AppDelegate.swift */; };
-		84A84CA11D164EA50067B64D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84CA01D164EA50067B64D /* ViewController.swift */; };
 		84A84CA41D164EA50067B64D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CA21D164EA50067B64D /* Main.storyboard */; };
 		84A84CA61D164EA50067B64D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CA51D164EA50067B64D /* Assets.xcassets */; };
 		84A84CA91D164EA50067B64D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CA71D164EA50067B64D /* LaunchScreen.storyboard */; };
 		84A84CB41D164EA50067B64D /* FootBallNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84CB31D164EA50067B64D /* FootBallNewTests.swift */; };
 		84A84CBF1D164EA50067B64D /* FootBallNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84CBE1D164EA50067B64D /* FootBallNewUITests.swift */; };
+		84A84CDC1D1650FE0067B64D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84CDB1D1650FE0067B64D /* HomeController.swift */; };
+		84A84CDE1D16851D0067B64D /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84CDD1D16851D0067B64D /* LeagueCell.swift */; };
+		84A84DDD1D168B440067B64D /* Albania.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CDF1D168B440067B64D /* Albania.png */; };
+		84A84DDE1D168B440067B64D /* AlbirexNiigataS.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE01D168B440067B64D /* AlbirexNiigataS.png */; };
+		84A84DDF1D168B440067B64D /* Algeria.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE11D168B440067B64D /* Algeria.png */; };
+		84A84DE01D168B440067B64D /* Almeria.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE21D168B440067B64D /* Almeria.png */; };
+		84A84DE11D168B440067B64D /* Angola.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE31D168B440067B64D /* Angola.png */; };
+		84A84DE21D168B440067B64D /* Argentina.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE41D168B440067B64D /* Argentina.png */; };
+		84A84DE31D168B440067B64D /* Arsenal.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE51D168B440067B64D /* Arsenal.png */; };
+		84A84DE41D168B440067B64D /* AstonVilla.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE61D168B440067B64D /* AstonVilla.png */; };
+		84A84DE51D168B440067B64D /* Atalanta.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE71D168B440067B64D /* Atalanta.png */; };
+		84A84DE61D168B440067B64D /* AthleticBilbao.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE81D168B440067B64D /* AthleticBilbao.png */; };
+		84A84DE71D168B440067B64D /* Atletico.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CE91D168B440067B64D /* Atletico.png */; };
+		84A84DE81D168B440067B64D /* Augsburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CEA1D168B440067B64D /* Augsburg.png */; };
+		84A84DE91D168B440067B64D /* Australia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CEB1D168B440067B64D /* Australia.png */; };
+		84A84DEA1D168B440067B64D /* Austria.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CEC1D168B440067B64D /* Austria.png */; };
+		84A84DEB1D168B440067B64D /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CED1D168B440067B64D /* Background@2x.png */; };
+		84A84DEC1D168B440067B64D /* Barcelona.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CEE1D168B440067B64D /* Barcelona.png */; };
+		84A84DED1D168B440067B64D /* Bastia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CEF1D168B440067B64D /* Bastia.png */; };
+		84A84DEE1D168B440067B64D /* Bayern.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF01D168B440067B64D /* Bayern.png */; };
+		84A84DEF1D168B440067B64D /* Belarus.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF11D168B440067B64D /* Belarus.png */; };
+		84A84DF01D168B440067B64D /* Belgium.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF21D168B440067B64D /* Belgium.png */; };
+		84A84DF11D168B440067B64D /* Benin.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF31D168B440067B64D /* Benin.png */; };
+		84A84DF21D168B440067B64D /* bg_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF41D168B440067B64D /* bg_nav.png */; };
+		84A84DF31D168B440067B64D /* Bordeaux.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF51D168B440067B64D /* Bordeaux.png */; };
+		84A84DF41D168B440067B64D /* Bosnia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF61D168B440067B64D /* Bosnia.png */; };
+		84A84DF51D168B440067B64D /* Brazil.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF71D168B440067B64D /* Brazil.png */; };
+		84A84DF61D168B440067B64D /* Bremen.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF81D168B440067B64D /* Bremen.png */; };
+		84A84DF71D168B440067B64D /* Bulgaria.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CF91D168B440067B64D /* Bulgaria.png */; };
+		84A84DF81D168B440067B64D /* Bundesliga.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CFA1D168B440067B64D /* Bundesliga.png */; };
+		84A84DF91D168B440067B64D /* BurkinaFaso.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CFB1D168B440067B64D /* BurkinaFaso.png */; };
+		84A84DFA1D168B440067B64D /* Burnley.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CFC1D168B440067B64D /* Burnley.png */; };
+		84A84DFB1D168B440067B64D /* Caen.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CFD1D168B440067B64D /* Caen.png */; };
+		84A84DFC1D168B440067B64D /* Cagliari.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CFE1D168B440067B64D /* Cagliari.png */; };
+		84A84DFD1D168B440067B64D /* Caledonia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84CFF1D168B440067B64D /* Caledonia.png */; };
+		84A84DFE1D168B440067B64D /* Cameroon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D001D168B440067B64D /* Cameroon.png */; };
+		84A84DFF1D168B440067B64D /* Canada.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D011D168B440067B64D /* Canada.png */; };
+		84A84E001D168B440067B64D /* CapeVerde.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D021D168B440067B64D /* CapeVerde.png */; };
+		84A84E011D168B440067B64D /* Celta.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D031D168B440067B64D /* Celta.png */; };
+		84A84E021D168B440067B64D /* CentralAfrican.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D041D168B440067B64D /* CentralAfrican.png */; };
+		84A84E031D168B440067B64D /* Cesena.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D051D168B440067B64D /* Cesena.png */; };
+		84A84E041D168B440067B64D /* Champion.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D061D168B440067B64D /* Champion.png */; };
+		84A84E051D168B440067B64D /* Chelsea.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D071D168B440067B64D /* Chelsea.png */; };
+		84A84E061D168B440067B64D /* Chievo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D081D168B440067B64D /* Chievo.png */; };
+		84A84E071D168B440067B64D /* Chile.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D091D168B440067B64D /* Chile.png */; };
+		84A84E081D168B440067B64D /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D0A1D168B440067B64D /* China.png */; };
+		84A84E091D168B440067B64D /* Colombia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D0B1D168B440067B64D /* Colombia.png */; };
+		84A84E0A1D168B440067B64D /* Comoros.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D0C1D168B440067B64D /* Comoros.png */; };
+		84A84E0B1D168B440067B64D /* Congo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D0D1D168B440067B64D /* Congo.png */; };
+		84A84E0C1D168B440067B64D /* Cordoba.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D0E1D168B440067B64D /* Cordoba.png */; };
+		84A84E0D1D168B440067B64D /* CostaRica.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D0F1D168B440067B64D /* CostaRica.png */; };
+		84A84E0E1D168B440067B64D /* Croatia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D101D168B440067B64D /* Croatia.png */; };
+		84A84E0F1D168B440067B64D /* Crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D111D168B440067B64D /* Crystal.png */; };
+		84A84E101D168B440067B64D /* CrystalPalace.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D121D168B440067B64D /* CrystalPalace.png */; };
+		84A84E111D168B440067B64D /* Czech.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D131D168B440067B64D /* Czech.jpg */; };
+		84A84E121D168B440067B64D /* Czech.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D141D168B440067B64D /* Czech.png */; };
+		84A84E131D168B440067B64D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D151D168B440067B64D /* Default-568h@2x.png */; };
+		84A84E141D168B440067B64D /* Denmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D161D168B440067B64D /* Denmark.png */; };
+		84A84E151D168B440067B64D /* Deportivo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D171D168B440067B64D /* Deportivo.png */; };
+		84A84E161D168B440067B64D /* Dortmund.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D181D168B440067B64D /* Dortmund.png */; };
+		84A84E171D168B440067B64D /* Ecuador.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D191D168B440067B64D /* Ecuador.png */; };
+		84A84E181D168B440067B64D /* Egypt.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D1A1D168B440067B64D /* Egypt.png */; };
+		84A84E191D168B440067B64D /* Eibar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D1B1D168B440067B64D /* Eibar.png */; };
+		84A84E1A1D168B440067B64D /* Elche.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D1C1D168B440067B64D /* Elche.png */; };
+		84A84E1B1D168B440067B64D /* Empoli.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D1D1D168B440067B64D /* Empoli.png */; };
+		84A84E1C1D168B440067B64D /* Eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D1E1D168B440067B64D /* Eng.png */; };
+		84A84E1D1D168B440067B64D /* Espanyol.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D1F1D168B440067B64D /* Espanyol.png */; };
+		84A84E1E1D168B440067B64D /* Everton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D201D168B440067B64D /* Everton.png */; };
+		84A84E1F1D168B440067B64D /* Evian.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D211D168B440067B64D /* Evian.png */; };
+		84A84E201D168B440067B64D /* FCTokyo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D221D168B440067B64D /* FCTokyo.png */; };
+		84A84E211D168B440067B64D /* Finland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D231D168B440067B64D /* Finland.png */; };
+		84A84E221D168B440067B64D /* Fiorentina.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D241D168B440067B64D /* Fiorentina.png */; };
+		84A84E231D168B440067B64D /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D251D168B440067B64D /* France.png */; };
+		84A84E241D168B440067B64D /* Frankfurt.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D261D168B440067B64D /* Frankfurt.png */; };
+		84A84E251D168B440067B64D /* Freiburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D271D168B440067B64D /* Freiburg.png */; };
+		84A84E261D168B440067B64D /* Fulham.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D281D168B440067B64D /* Fulham.png */; };
+		84A84E271D168B440067B64D /* Gabon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D291D168B440067B64D /* Gabon.png */; };
+		84A84E281D168B440067B64D /* GambaOsaka.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D2A1D168B440067B64D /* GambaOsaka.png */; };
+		84A84E291D168B440067B64D /* Gambia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D2B1D168B440067B64D /* Gambia.png */; };
+		84A84E2A1D168B440067B64D /* Genoa.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D2C1D168B440067B64D /* Genoa.png */; };
+		84A84E2B1D168B440067B64D /* Georgia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D2D1D168B440067B64D /* Georgia.png */; };
+		84A84E2C1D168B440067B64D /* Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D2E1D168B440067B64D /* Germany.png */; };
+		84A84E2D1D168B440067B64D /* Getafe.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D2F1D168B440067B64D /* Getafe.png */; };
+		84A84E2E1D168B440067B64D /* Ghana.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D301D168B440067B64D /* Ghana.png */; };
+		84A84E2F1D168B440067B64D /* Granada.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D311D168B440067B64D /* Granada.png */; };
+		84A84E301D168B440067B64D /* Greece.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D321D168B440067B64D /* Greece.png */; };
+		84A84E311D168B440067B64D /* Guadeloupe.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D331D168B440067B64D /* Guadeloupe.png */; };
+		84A84E321D168B440067B64D /* Guinea.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D341D168B440067B64D /* Guinea.png */; };
+		84A84E331D168B440067B64D /* Guingamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D351D168B440067B64D /* Guingamp.png */; };
+		84A84E341D168B440067B64D /* Haiti.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D361D168B440067B64D /* Haiti.png */; };
+		84A84E351D168B440067B64D /* Hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D371D168B440067B64D /* Hamburger.png */; };
+		84A84E361D168B440067B64D /* Hannover.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D381D168B440067B64D /* Hannover.png */; };
+		84A84E371D168B440067B64D /* HerthaBerlin.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D391D168B440067B64D /* HerthaBerlin.png */; };
+		84A84E381D168B440067B64D /* Hoffenheim.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D3A1D168B440067B64D /* Hoffenheim.png */; };
+		84A84E391D168B440067B64D /* Holland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D3B1D168B440067B64D /* Holland.png */; };
+		84A84E3A1D168B440067B64D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D3C1D168B440067B64D /* home.png */; };
+		84A84E3B1D168B440067B64D /* Honduras.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D3D1D168B440067B64D /* Honduras.png */; };
+		84A84E3C1D168B440067B64D /* hot.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D3E1D168B440067B64D /* hot.png */; };
+		84A84E3D1D168B440067B64D /* Hull.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D3F1D168B440067B64D /* Hull.png */; };
+		84A84E3E1D168B440067B64D /* Hungary.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D401D168B440067B64D /* Hungary.png */; };
+		84A84E3F1D168B440067B64D /* Iceland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D411D168B440067B64D /* Iceland.png */; };
+		84A84E401D168B440067B64D /* Inter.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D421D168B440067B64D /* Inter.png */; };
+		84A84E411D168B440067B64D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D451D168B440067B64D /* Contents.json */; };
+		84A84E421D168B440067B64D /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D461D168B440067B64D /* Icon-40.png */; };
+		84A84E431D168B440067B64D /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D471D168B440067B64D /* Icon-40@2x.png */; };
+		84A84E441D168B440067B64D /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D481D168B440067B64D /* Icon-40@3x.png */; };
+		84A84E451D168B440067B64D /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D491D168B440067B64D /* Icon-60@2x.png */; };
+		84A84E461D168B440067B64D /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D4A1D168B440067B64D /* Icon-60@3x.png */; };
+		84A84E471D168B440067B64D /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D4B1D168B440067B64D /* Icon-76.png */; };
+		84A84E481D168B440067B64D /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D4C1D168B440067B64D /* Icon-76@2x.png */; };
+		84A84E491D168B440067B64D /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D4D1D168B440067B64D /* Icon-Small.png */; };
+		84A84E4A1D168B440067B64D /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D4E1D168B440067B64D /* Icon-Small@2x.png */; };
+		84A84E4B1D168B440067B64D /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D4F1D168B440067B64D /* Icon-Small@3x.png */; };
+		84A84E4C1D168B440067B64D /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D501D168B440067B64D /* Icon-60.png */; };
+		84A84E4D1D168B440067B64D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D511D168B440067B64D /* Icon-72.png */; };
+		84A84E4E1D168B440067B64D /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D521D168B440067B64D /* Icon-72@2x.png */; };
+		84A84E4F1D168B440067B64D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D531D168B440067B64D /* Icon-Small-50.png */; };
+		84A84E501D168B440067B64D /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D541D168B440067B64D /* Icon-Small-50@2x.png */; };
+		84A84E511D168B440067B64D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D551D168B440067B64D /* Icon.png */; };
+		84A84E521D168B440067B64D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D561D168B440067B64D /* Icon@2x.png */; };
+		84A84E531D168B440067B64D /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D571D168B440067B64D /* iTunesArtwork.png */; };
+		84A84E541D168B440067B64D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D581D168B440067B64D /* iTunesArtwork@2x.png */; };
+		84A84E551D168B440067B64D /* Ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D591D168B440067B64D /* Ireland.png */; };
+		84A84E561D168B440067B64D /* Israel.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D5A1D168B440067B64D /* Israel.png */; };
+		84A84E571D168B440067B64D /* Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D5B1D168B440067B64D /* Italy.png */; };
+		84A84E581D168B440067B64D /* IvoryCoast.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D5C1D168B440067B64D /* IvoryCoast.png */; };
+		84A84E591D168B440067B64D /* Jamaica.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D5D1D168B440067B64D /* Jamaica.png */; };
+		84A84E5A1D168B440067B64D /* Japan.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D5E1D168B440067B64D /* Japan.png */; };
+		84A84E5B1D168B440067B64D /* JLeague.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D5F1D168B440067B64D /* JLeague.png */; };
+		84A84E5C1D168B440067B64D /* Juventus.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D601D168B440067B64D /* Juventus.png */; };
+		84A84E5D1D168B440067B64D /* Kashima.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D611D168B440067B64D /* Kashima.png */; };
+		84A84E5E1D168B440067B64D /* Kashiwa.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D621D168B440067B64D /* Kashiwa.png */; };
+		84A84E5F1D168B440067B64D /* KawasakiFrontale.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D631D168B440067B64D /* KawasakiFrontale.png */; };
+		84A84E601D168B440067B64D /* Kenya.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D641D168B440067B64D /* Kenya.png */; };
+		84A84E611D168B440067B64D /* Koln.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D651D168B440067B64D /* Koln.png */; };
+		84A84E621D168B440067B64D /* Korea.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D661D168B440067B64D /* Korea.png */; };
+		84A84E631D168B440067B64D /* Kosovo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D671D168B440067B64D /* Kosovo.png */; };
+		84A84E641D168B440067B64D /* LaLiga.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D681D168B440067B64D /* LaLiga.png */; };
+		84A84E651D168B440067B64D /* Lazio.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D691D168B440067B64D /* Lazio.png */; };
+		84A84E661D168B440067B64D /* Leicester.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D6A1D168B440067B64D /* Leicester.png */; };
+		84A84E671D168B440067B64D /* Lens.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D6B1D168B440067B64D /* Lens.png */; };
+		84A84E681D168B440067B64D /* Levante.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D6C1D168B440067B64D /* Levante.png */; };
+		84A84E691D168B440067B64D /* Leverkusen.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D6D1D168B440067B64D /* Leverkusen.png */; };
+		84A84E6A1D168B440067B64D /* Ligue1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D6E1D168B440067B64D /* Ligue1.png */; };
+		84A84E6B1D168B440067B64D /* Lille.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D6F1D168B440067B64D /* Lille.png */; };
+		84A84E6C1D168B440067B64D /* Liverpool.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D701D168B440067B64D /* Liverpool.png */; };
+		84A84E6D1D168B440067B64D /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D711D168B440067B64D /* logo.jpg */; };
+		84A84E6E1D168B440067B64D /* Lorient.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D721D168B440067B64D /* Lorient.png */; };
+		84A84E6F1D168B440067B64D /* Lyon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D731D168B440067B64D /* Lyon.png */; };
+		84A84E701D168B440067B64D /* Macedonia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D741D168B440067B64D /* Macedonia.png */; };
+		84A84E711D168B440067B64D /* Madagascar.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D751D168B440067B64D /* Madagascar.png */; };
+		84A84E721D168B440067B64D /* Mainz05.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D761D168B440067B64D /* Mainz05.png */; };
+		84A84E731D168B440067B64D /* Malaga.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D771D168B440067B64D /* Malaga.png */; };
+		84A84E741D168B440067B64D /* Mali.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D781D168B440067B64D /* Mali.png */; };
+		84A84E751D168B440067B64D /* Marseille.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D791D168B440067B64D /* Marseille.png */; };
+		84A84E761D168B440067B64D /* Martinique.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D7A1D168B440067B64D /* Martinique.png */; };
+		84A84E771D168B440067B64D /* Mauritania.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D7B1D168B440067B64D /* Mauritania.png */; };
+		84A84E781D168B440067B64D /* MC.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D7C1D168B440067B64D /* MC.png */; };
+		84A84E791D168B440067B64D /* Metz.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D7D1D168B440067B64D /* Metz.png */; };
+		84A84E7A1D168B440067B64D /* Mexico.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D7E1D168B440067B64D /* Mexico.png */; };
+		84A84E7B1D168B440067B64D /* Milan.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D7F1D168B440067B64D /* Milan.png */; };
+		84A84E7C1D168B440067B64D /* Moldova.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D801D168B440067B64D /* Moldova.png */; };
+		84A84E7D1D168B440067B64D /* Monaco.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D811D168B440067B64D /* Monaco.png */; };
+		84A84E7E1D168B440067B64D /* Monchengladbach.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D821D168B440067B64D /* Monchengladbach.png */; };
+		84A84E7F1D168B440067B64D /* Montenegro.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D831D168B440067B64D /* Montenegro.png */; };
+		84A84E801D168B440067B64D /* Montpellier.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D841D168B440067B64D /* Montpellier.png */; };
+		84A84E811D168B440067B64D /* Morocco.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D851D168B440067B64D /* Morocco.png */; };
+		84A84E821D168B440067B64D /* Mozambique.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D861D168B440067B64D /* Mozambique.png */; };
+		84A84E831D168B440067B64D /* MU.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D871D168B440067B64D /* MU.png */; };
+		84A84E841D168B440067B64D /* NagoyaGrampus8.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D881D168B440067B64D /* NagoyaGrampus8.png */; };
+		84A84E851D168B440067B64D /* Nantes.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D891D168B440067B64D /* Nantes.png */; };
+		84A84E861D168B440067B64D /* Napoli.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D8A1D168B440067B64D /* Napoli.png */; };
+		84A84E871D168B440067B64D /* Netherlands.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D8B1D168B440067B64D /* Netherlands.png */; };
+		84A84E881D168B440067B64D /* Newcastle.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D8C1D168B440067B64D /* Newcastle.png */; };
+		84A84E891D168B440067B64D /* NewZealand.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D8D1D168B440067B64D /* NewZealand.png */; };
+		84A84E8A1D168B440067B64D /* Nice.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D8E1D168B440067B64D /* Nice.png */; };
+		84A84E8B1D168B440067B64D /* Nigeria.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D8F1D168B440067B64D /* Nigeria.png */; };
+		84A84E8C1D168B440067B64D /* NorthernIreland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D901D168B440067B64D /* NorthernIreland.png */; };
+		84A84E8D1D168B440067B64D /* Norway.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D911D168B440067B64D /* Norway.png */; };
+		84A84E8E1D168B440067B64D /* OmiyaArdija.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D921D168B440067B64D /* OmiyaArdija.png */; };
+		84A84E8F1D168B440067B64D /* OsakaFC.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D931D168B440067B64D /* OsakaFC.png */; };
+		84A84E901D168B440067B64D /* Paderborn.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D941D168B440067B64D /* Paderborn.png */; };
+		84A84E911D168B440067B64D /* Palermo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D951D168B440067B64D /* Palermo.png */; };
+		84A84E921D168B440067B64D /* Paraguay.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D961D168B440067B64D /* Paraguay.png */; };
+		84A84E931D168B440067B64D /* ParisSG.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D971D168B440067B64D /* ParisSG.png */; };
+		84A84E941D168B440067B64D /* Parma.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D981D168B440067B64D /* Parma.png */; };
+		84A84E951D168B440067B64D /* Poland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D991D168B440067B64D /* Poland.png */; };
+		84A84E961D168B440067B64D /* Portugal.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D9A1D168B440067B64D /* Portugal.png */; };
+		84A84E971D168B440067B64D /* PremierLeague.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D9B1D168B440067B64D /* PremierLeague.png */; };
+		84A84E981D168B440067B64D /* PrimierLeague.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D9C1D168B440067B64D /* PrimierLeague.png */; };
+		84A84E991D168B440067B64D /* QPR.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D9D1D168B440067B64D /* QPR.png */; };
+		84A84E9A1D168B440067B64D /* RayoVallecano.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D9E1D168B440067B64D /* RayoVallecano.png */; };
+		84A84E9B1D168B440067B64D /* Real.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84D9F1D168B440067B64D /* Real.png */; };
+		84A84E9C1D168B440067B64D /* RealSociedad.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA01D168B440067B64D /* RealSociedad.png */; };
+		84A84E9D1D168B440067B64D /* Reims.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA11D168B440067B64D /* Reims.png */; };
+		84A84E9E1D168B440067B64D /* Rennes.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA21D168B440067B64D /* Rennes.png */; };
+		84A84E9F1D168B440067B64D /* Roma.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA31D168B440067B64D /* Roma.png */; };
+		84A84EA01D168B440067B64D /* Romania.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA41D168B440067B64D /* Romania.png */; };
+		84A84EA11D168B440067B64D /* Russia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA51D168B440067B64D /* Russia.png */; };
+		84A84EA21D168B440067B64D /* Sampdoria.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA61D168B440067B64D /* Sampdoria.png */; };
+		84A84EA31D168B440067B64D /* SanfrecceHiroshima.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA71D168B440067B64D /* SanfrecceHiroshima.png */; };
+		84A84EA41D168B440067B64D /* Sassuolo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA81D168B440067B64D /* Sassuolo.png */; };
+		84A84EA51D168B440067B64D /* Schalke.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DA91D168B440067B64D /* Schalke.png */; };
+		84A84EA61D168B440067B64D /* Scotland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DAA1D168B440067B64D /* Scotland.png */; };
+		84A84EA71D168B440067B64D /* Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DAB1D168B440067B64D /* Selected@2x.png */; };
+		84A84EA81D168B440067B64D /* SelectedNews.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DAC1D168B440067B64D /* SelectedNews.png */; };
+		84A84EA91D168B440067B64D /* SelectedRanking.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DAD1D168B440067B64D /* SelectedRanking.png */; };
+		84A84EAA1D168B440067B64D /* Senegal.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DAE1D168B440067B64D /* Senegal.png */; };
+		84A84EAB1D168B440067B64D /* Serbia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DAF1D168B440067B64D /* Serbia.png */; };
+		84A84EAC1D168B440067B64D /* SerieA.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB01D168B440067B64D /* SerieA.png */; };
+		84A84EAD1D168B440067B64D /* Sevilla.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB11D168B440067B64D /* Sevilla.png */; };
+		84A84EAE1D168B440067B64D /* ShimizuSPulse.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB21D168B440067B64D /* ShimizuSPulse.png */; };
+		84A84EAF1D168B440067B64D /* Slovakia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB31D168B440067B64D /* Slovakia.png */; };
+		84A84EB01D168B440067B64D /* Slovenia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB41D168B440067B64D /* Slovenia.png */; };
+		84A84EB11D168B440067B64D /* Sociedad.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB51D168B440067B64D /* Sociedad.png */; };
+		84A84EB21D168B440067B64D /* SouthAfrica.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB61D168B440067B64D /* SouthAfrica.png */; };
+		84A84EB31D168B440067B64D /* Southampton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB71D168B440067B64D /* Southampton.png */; };
+		84A84EB41D168B440067B64D /* Spain.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB81D168B440067B64D /* Spain.png */; };
+		84A84EB51D168B440067B64D /* St.Etienne.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DB91D168B440067B64D /* St.Etienne.png */; };
+		84A84EB61D168B440067B64D /* Stoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DBA1D168B440067B64D /* Stoke.png */; };
+		84A84EB71D168B440067B64D /* Stuttgart.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DBB1D168B440067B64D /* Stuttgart.png */; };
+		84A84EB81D168B440067B64D /* Sunderland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DBC1D168B440067B64D /* Sunderland.png */; };
+		84A84EB91D168B440067B64D /* Swansea.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DBD1D168B440067B64D /* Swansea.png */; };
+		84A84EBA1D168B440067B64D /* Sweden.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DBE1D168B440067B64D /* Sweden.png */; };
+		84A84EBB1D168B440067B64D /* Switzerland.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DBF1D168B440067B64D /* Switzerland.png */; };
+		84A84EBC1D168B440067B64D /* Thailand.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC01D168B440067B64D /* Thailand.png */; };
+		84A84EBD1D168B440067B64D /* Togo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC11D168B440067B64D /* Togo.png */; };
+		84A84EBE1D168B440067B64D /* TokushimaVortis.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC21D168B440067B64D /* TokushimaVortis.png */; };
+		84A84EBF1D168B440067B64D /* Torino.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC31D168B440067B64D /* Torino.png */; };
+		84A84EC01D168B440067B64D /* Tosu.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC41D168B440067B64D /* Tosu.png */; };
+		84A84EC11D168B440067B64D /* Tottenham.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC51D168B440067B64D /* Tottenham.png */; };
+		84A84EC21D168B440067B64D /* Toulouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC61D168B440067B64D /* Toulouse.png */; };
+		84A84EC31D168B440067B64D /* Tunisia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC71D168B440067B64D /* Tunisia.png */; };
+		84A84EC41D168B440067B64D /* Turkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC81D168B440067B64D /* Turkey.png */; };
+		84A84EC51D168B440067B64D /* Udinese.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DC91D168B440067B64D /* Udinese.png */; };
+		84A84EC61D168B440067B64D /* Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DCA1D168B440067B64D /* Ukraine.png */; };
+		84A84EC71D168B440067B64D /* UrawaRedDiamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DCB1D168B440067B64D /* UrawaRedDiamonds.png */; };
+		84A84EC81D168B440067B64D /* Uruguay.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DCC1D168B440067B64D /* Uruguay.png */; };
+		84A84EC91D168B440067B64D /* US.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DCD1D168B440067B64D /* US.png */; };
+		84A84ECA1D168B440067B64D /* Valencia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DCE1D168B440067B64D /* Valencia.png */; };
+		84A84ECB1D168B440067B64D /* Vallecano.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DCF1D168B440067B64D /* Vallecano.png */; };
+		84A84ECC1D168B440067B64D /* VegaltaSendai.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD01D168B440067B64D /* VegaltaSendai.png */; };
+		84A84ECD1D168B440067B64D /* Venezuela.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD11D168B440067B64D /* Venezuela.png */; };
+		84A84ECE1D168B440067B64D /* VentforetKofu.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD21D168B440067B64D /* VentforetKofu.png */; };
+		84A84ECF1D168B440067B64D /* Verona.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD31D168B440067B64D /* Verona.png */; };
+		84A84ED01D168B440067B64D /* VietNam.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD41D168B440067B64D /* VietNam.png */; };
+		84A84ED11D168B440067B64D /* Villarreal.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD51D168B440067B64D /* Villarreal.png */; };
+		84A84ED21D168B440067B64D /* VisselKobe.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD61D168B440067B64D /* VisselKobe.png */; };
+		84A84ED31D168B440067B64D /* Wales.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD71D168B440067B64D /* Wales.png */; };
+		84A84ED41D168B440067B64D /* WestBrom.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD81D168B440067B64D /* WestBrom.png */; };
+		84A84ED51D168B440067B64D /* WestHam.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DD91D168B440067B64D /* WestHam.png */; };
+		84A84ED61D168B440067B64D /* Wolfsburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DDA1D168B440067B64D /* Wolfsburg.png */; };
+		84A84ED71D168B440067B64D /* YokohamaFMarinos.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DDB1D168B440067B64D /* YokohamaFMarinos.png */; };
+		84A84ED81D168B440067B64D /* Zambia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DDC1D168B440067B64D /* Zambia.png */; };
+		84C1532F1D18B96F00A50009 /* RankingAndMatchsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1532E1D18B96F00A50009 /* RankingAndMatchsController.swift */; };
+		84C1533A1D18BE2200A50009 /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C153381D18BE2200A50009 /* RankingCell.swift */; };
+		84C1533B1D18BE2200A50009 /* RankingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C153391D18BE2200A50009 /* RankingCell.xib */; };
+		84C1533E1D18BE3B00A50009 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1533C1D18BE3B00A50009 /* MatchCell.swift */; };
+		84C1533F1D18BE3B00A50009 /* MatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C1533D1D18BE3B00A50009 /* MatchCell.xib */; };
+		84E9FE7B1D199D8B004A4980 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9FE7A1D199D8B004A4980 /* TeamController.swift */; };
+		84E9FE7D1D199DE8004A4980 /* TeamInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9FE7C1D199DE8004A4980 /* TeamInfoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +308,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160310F463D1194BCBDD2B53 /* Pods-FootBallNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootBallNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootBallNew/Pods-FootBallNew.release.xcconfig"; sourceTree = "<group>"; };
+		475AA35B4ED7F9D7C50DB529 /* Pods-FootBallNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootBallNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootBallNew/Pods-FootBallNew.debug.xcconfig"; sourceTree = "<group>"; };
+		61D31CE84925F1BB3119EB56 /* Pods_FootBallNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootBallNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1CF6CF9B9BC8A7FB8311E4 /* Pods-FootBallNewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootBallNewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootBallNewTests/Pods-FootBallNewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		846C82571D3405C0005467C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		848FFB571D1E2554006E8BE6 /* PlayerInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInfoController.swift; sourceTree = "<group>"; };
+		848FFB611D1E2BB9006E8BE6 /* TextNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextNormalCell.swift; sourceTree = "<group>"; };
+		848FFB621D1E2BB9006E8BE6 /* TextNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextNormalCell.xib; sourceTree = "<group>"; };
+		848FFB651D1E2D54006E8BE6 /* PlayerCareerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCareerCell.swift; sourceTree = "<group>"; };
+		848FFB661D1E2D54006E8BE6 /* PlayerCareerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerCareerCell.xib; sourceTree = "<group>"; };
+		848FFB6E1D1E5713006E8BE6 /* CareerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareerModel.swift; sourceTree = "<group>"; };
+		848FFB701D1E6353006E8BE6 /* CareerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareerHeaderView.swift; sourceTree = "<group>"; };
+		848FFB721D1E636B006E8BE6 /* CareerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CareerHeaderView.xib; sourceTree = "<group>"; };
+		8493574C1D1B66A300152A89 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		84A844251D3560210057E0CD /* FootBallNew-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FootBallNew-Bridging-Header.h"; sourceTree = "<group>"; };
+		84A844261D3560210057E0CD /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		84A844271D3560210057E0CD /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		84A84C9B1D164EA50067B64D /* FootBallNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootBallNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A84C9E1D164EA50067B64D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84A84CA01D164EA50067B64D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84A84CA31D164EA50067B64D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84A84CA51D164EA50067B64D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A84CA81D164EA50067B64D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +337,272 @@
 		84A84CBA1D164EA50067B64D /* FootBallNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootBallNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A84CBE1D164EA50067B64D /* FootBallNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootBallNewUITests.swift; sourceTree = "<group>"; };
 		84A84CC01D164EA50067B64D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A84CDB1D1650FE0067B64D /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		84A84CDD1D16851D0067B64D /* LeagueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
+		84A84CDF1D168B440067B64D /* Albania.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Albania.png; sourceTree = "<group>"; };
+		84A84CE01D168B440067B64D /* AlbirexNiigataS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlbirexNiigataS.png; sourceTree = "<group>"; };
+		84A84CE11D168B440067B64D /* Algeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Algeria.png; sourceTree = "<group>"; };
+		84A84CE21D168B440067B64D /* Almeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Almeria.png; sourceTree = "<group>"; };
+		84A84CE31D168B440067B64D /* Angola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Angola.png; sourceTree = "<group>"; };
+		84A84CE41D168B440067B64D /* Argentina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Argentina.png; sourceTree = "<group>"; };
+		84A84CE51D168B440067B64D /* Arsenal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arsenal.png; sourceTree = "<group>"; };
+		84A84CE61D168B440067B64D /* AstonVilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AstonVilla.png; sourceTree = "<group>"; };
+		84A84CE71D168B440067B64D /* Atalanta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atalanta.png; sourceTree = "<group>"; };
+		84A84CE81D168B440067B64D /* AthleticBilbao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AthleticBilbao.png; sourceTree = "<group>"; };
+		84A84CE91D168B440067B64D /* Atletico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atletico.png; sourceTree = "<group>"; };
+		84A84CEA1D168B440067B64D /* Augsburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Augsburg.png; sourceTree = "<group>"; };
+		84A84CEB1D168B440067B64D /* Australia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Australia.png; sourceTree = "<group>"; };
+		84A84CEC1D168B440067B64D /* Austria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Austria.png; sourceTree = "<group>"; };
+		84A84CED1D168B440067B64D /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		84A84CEE1D168B440067B64D /* Barcelona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barcelona.png; sourceTree = "<group>"; };
+		84A84CEF1D168B440067B64D /* Bastia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bastia.png; sourceTree = "<group>"; };
+		84A84CF01D168B440067B64D /* Bayern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bayern.png; sourceTree = "<group>"; };
+		84A84CF11D168B440067B64D /* Belarus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Belarus.png; sourceTree = "<group>"; };
+		84A84CF21D168B440067B64D /* Belgium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Belgium.png; sourceTree = "<group>"; };
+		84A84CF31D168B440067B64D /* Benin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Benin.png; sourceTree = "<group>"; };
+		84A84CF41D168B440067B64D /* bg_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_nav.png; sourceTree = "<group>"; };
+		84A84CF51D168B440067B64D /* Bordeaux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bordeaux.png; sourceTree = "<group>"; };
+		84A84CF61D168B440067B64D /* Bosnia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bosnia.png; sourceTree = "<group>"; };
+		84A84CF71D168B440067B64D /* Brazil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brazil.png; sourceTree = "<group>"; };
+		84A84CF81D168B440067B64D /* Bremen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bremen.png; sourceTree = "<group>"; };
+		84A84CF91D168B440067B64D /* Bulgaria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bulgaria.png; sourceTree = "<group>"; };
+		84A84CFA1D168B440067B64D /* Bundesliga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bundesliga.png; sourceTree = "<group>"; };
+		84A84CFB1D168B440067B64D /* BurkinaFaso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BurkinaFaso.png; sourceTree = "<group>"; };
+		84A84CFC1D168B440067B64D /* Burnley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Burnley.png; sourceTree = "<group>"; };
+		84A84CFD1D168B440067B64D /* Caen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caen.png; sourceTree = "<group>"; };
+		84A84CFE1D168B440067B64D /* Cagliari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cagliari.png; sourceTree = "<group>"; };
+		84A84CFF1D168B440067B64D /* Caledonia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caledonia.png; sourceTree = "<group>"; };
+		84A84D001D168B440067B64D /* Cameroon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cameroon.png; sourceTree = "<group>"; };
+		84A84D011D168B440067B64D /* Canada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Canada.png; sourceTree = "<group>"; };
+		84A84D021D168B440067B64D /* CapeVerde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CapeVerde.png; sourceTree = "<group>"; };
+		84A84D031D168B440067B64D /* Celta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Celta.png; sourceTree = "<group>"; };
+		84A84D041D168B440067B64D /* CentralAfrican.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CentralAfrican.png; sourceTree = "<group>"; };
+		84A84D051D168B440067B64D /* Cesena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cesena.png; sourceTree = "<group>"; };
+		84A84D061D168B440067B64D /* Champion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Champion.png; sourceTree = "<group>"; };
+		84A84D071D168B440067B64D /* Chelsea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chelsea.png; sourceTree = "<group>"; };
+		84A84D081D168B440067B64D /* Chievo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chievo.png; sourceTree = "<group>"; };
+		84A84D091D168B440067B64D /* Chile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chile.png; sourceTree = "<group>"; };
+		84A84D0A1D168B440067B64D /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China.png; sourceTree = "<group>"; };
+		84A84D0B1D168B440067B64D /* Colombia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Colombia.png; sourceTree = "<group>"; };
+		84A84D0C1D168B440067B64D /* Comoros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Comoros.png; sourceTree = "<group>"; };
+		84A84D0D1D168B440067B64D /* Congo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Congo.png; sourceTree = "<group>"; };
+		84A84D0E1D168B440067B64D /* Cordoba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cordoba.png; sourceTree = "<group>"; };
+		84A84D0F1D168B440067B64D /* CostaRica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CostaRica.png; sourceTree = "<group>"; };
+		84A84D101D168B440067B64D /* Croatia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Croatia.png; sourceTree = "<group>"; };
+		84A84D111D168B440067B64D /* Crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crystal.png; sourceTree = "<group>"; };
+		84A84D121D168B440067B64D /* CrystalPalace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CrystalPalace.png; sourceTree = "<group>"; };
+		84A84D131D168B440067B64D /* Czech.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Czech.jpg; sourceTree = "<group>"; };
+		84A84D141D168B440067B64D /* Czech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Czech.png; sourceTree = "<group>"; };
+		84A84D151D168B440067B64D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		84A84D161D168B440067B64D /* Denmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Denmark.png; sourceTree = "<group>"; };
+		84A84D171D168B440067B64D /* Deportivo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deportivo.png; sourceTree = "<group>"; };
+		84A84D181D168B440067B64D /* Dortmund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dortmund.png; sourceTree = "<group>"; };
+		84A84D191D168B440067B64D /* Ecuador.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ecuador.png; sourceTree = "<group>"; };
+		84A84D1A1D168B440067B64D /* Egypt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egypt.png; sourceTree = "<group>"; };
+		84A84D1B1D168B440067B64D /* Eibar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eibar.png; sourceTree = "<group>"; };
+		84A84D1C1D168B440067B64D /* Elche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Elche.png; sourceTree = "<group>"; };
+		84A84D1D1D168B440067B64D /* Empoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Empoli.png; sourceTree = "<group>"; };
+		84A84D1E1D168B440067B64D /* Eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eng.png; sourceTree = "<group>"; };
+		84A84D1F1D168B440067B64D /* Espanyol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Espanyol.png; sourceTree = "<group>"; };
+		84A84D201D168B440067B64D /* Everton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Everton.png; sourceTree = "<group>"; };
+		84A84D211D168B440067B64D /* Evian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Evian.png; sourceTree = "<group>"; };
+		84A84D221D168B440067B64D /* FCTokyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FCTokyo.png; sourceTree = "<group>"; };
+		84A84D231D168B440067B64D /* Finland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Finland.png; sourceTree = "<group>"; };
+		84A84D241D168B440067B64D /* Fiorentina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fiorentina.png; sourceTree = "<group>"; };
+		84A84D251D168B440067B64D /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = France.png; sourceTree = "<group>"; };
+		84A84D261D168B440067B64D /* Frankfurt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frankfurt.png; sourceTree = "<group>"; };
+		84A84D271D168B440067B64D /* Freiburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Freiburg.png; sourceTree = "<group>"; };
+		84A84D281D168B440067B64D /* Fulham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fulham.png; sourceTree = "<group>"; };
+		84A84D291D168B440067B64D /* Gabon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gabon.png; sourceTree = "<group>"; };
+		84A84D2A1D168B440067B64D /* GambaOsaka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GambaOsaka.png; sourceTree = "<group>"; };
+		84A84D2B1D168B440067B64D /* Gambia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gambia.png; sourceTree = "<group>"; };
+		84A84D2C1D168B440067B64D /* Genoa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Genoa.png; sourceTree = "<group>"; };
+		84A84D2D1D168B440067B64D /* Georgia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Georgia.png; sourceTree = "<group>"; };
+		84A84D2E1D168B440067B64D /* Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Germany.png; sourceTree = "<group>"; };
+		84A84D2F1D168B440067B64D /* Getafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Getafe.png; sourceTree = "<group>"; };
+		84A84D301D168B440067B64D /* Ghana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ghana.png; sourceTree = "<group>"; };
+		84A84D311D168B440067B64D /* Granada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Granada.png; sourceTree = "<group>"; };
+		84A84D321D168B440067B64D /* Greece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Greece.png; sourceTree = "<group>"; };
+		84A84D331D168B440067B64D /* Guadeloupe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guadeloupe.png; sourceTree = "<group>"; };
+		84A84D341D168B440067B64D /* Guinea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guinea.png; sourceTree = "<group>"; };
+		84A84D351D168B440067B64D /* Guingamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guingamp.png; sourceTree = "<group>"; };
+		84A84D361D168B440067B64D /* Haiti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Haiti.png; sourceTree = "<group>"; };
+		84A84D371D168B440067B64D /* Hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hamburger.png; sourceTree = "<group>"; };
+		84A84D381D168B440067B64D /* Hannover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hannover.png; sourceTree = "<group>"; };
+		84A84D391D168B440067B64D /* HerthaBerlin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HerthaBerlin.png; sourceTree = "<group>"; };
+		84A84D3A1D168B440067B64D /* Hoffenheim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hoffenheim.png; sourceTree = "<group>"; };
+		84A84D3B1D168B440067B64D /* Holland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holland.png; sourceTree = "<group>"; };
+		84A84D3C1D168B440067B64D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		84A84D3D1D168B440067B64D /* Honduras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Honduras.png; sourceTree = "<group>"; };
+		84A84D3E1D168B440067B64D /* hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hot.png; sourceTree = "<group>"; };
+		84A84D3F1D168B440067B64D /* Hull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hull.png; sourceTree = "<group>"; };
+		84A84D401D168B440067B64D /* Hungary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hungary.png; sourceTree = "<group>"; };
+		84A84D411D168B440067B64D /* Iceland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iceland.png; sourceTree = "<group>"; };
+		84A84D421D168B440067B64D /* Inter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inter.png; sourceTree = "<group>"; };
+		84A84D451D168B440067B64D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		84A84D461D168B440067B64D /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		84A84D471D168B440067B64D /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		84A84D481D168B440067B64D /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		84A84D491D168B440067B64D /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		84A84D4A1D168B440067B64D /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		84A84D4B1D168B440067B64D /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		84A84D4C1D168B440067B64D /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		84A84D4D1D168B440067B64D /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		84A84D4E1D168B440067B64D /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		84A84D4F1D168B440067B64D /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		84A84D501D168B440067B64D /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		84A84D511D168B440067B64D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		84A84D521D168B440067B64D /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		84A84D531D168B440067B64D /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		84A84D541D168B440067B64D /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		84A84D551D168B440067B64D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		84A84D561D168B440067B64D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		84A84D571D168B440067B64D /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		84A84D581D168B440067B64D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		84A84D591D168B440067B64D /* Ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ireland.png; sourceTree = "<group>"; };
+		84A84D5A1D168B440067B64D /* Israel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Israel.png; sourceTree = "<group>"; };
+		84A84D5B1D168B440067B64D /* Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Italy.png; sourceTree = "<group>"; };
+		84A84D5C1D168B440067B64D /* IvoryCoast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IvoryCoast.png; sourceTree = "<group>"; };
+		84A84D5D1D168B440067B64D /* Jamaica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jamaica.png; sourceTree = "<group>"; };
+		84A84D5E1D168B440067B64D /* Japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Japan.png; sourceTree = "<group>"; };
+		84A84D5F1D168B440067B64D /* JLeague.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JLeague.png; sourceTree = "<group>"; };
+		84A84D601D168B440067B64D /* Juventus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Juventus.png; sourceTree = "<group>"; };
+		84A84D611D168B440067B64D /* Kashima.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kashima.png; sourceTree = "<group>"; };
+		84A84D621D168B440067B64D /* Kashiwa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kashiwa.png; sourceTree = "<group>"; };
+		84A84D631D168B440067B64D /* KawasakiFrontale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KawasakiFrontale.png; sourceTree = "<group>"; };
+		84A84D641D168B440067B64D /* Kenya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kenya.png; sourceTree = "<group>"; };
+		84A84D651D168B440067B64D /* Koln.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Koln.png; sourceTree = "<group>"; };
+		84A84D661D168B440067B64D /* Korea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Korea.png; sourceTree = "<group>"; };
+		84A84D671D168B440067B64D /* Kosovo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kosovo.png; sourceTree = "<group>"; };
+		84A84D681D168B440067B64D /* LaLiga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaLiga.png; sourceTree = "<group>"; };
+		84A84D691D168B440067B64D /* Lazio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lazio.png; sourceTree = "<group>"; };
+		84A84D6A1D168B440067B64D /* Leicester.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leicester.png; sourceTree = "<group>"; };
+		84A84D6B1D168B440067B64D /* Lens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lens.png; sourceTree = "<group>"; };
+		84A84D6C1D168B440067B64D /* Levante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Levante.png; sourceTree = "<group>"; };
+		84A84D6D1D168B440067B64D /* Leverkusen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leverkusen.png; sourceTree = "<group>"; };
+		84A84D6E1D168B440067B64D /* Ligue1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ligue1.png; sourceTree = "<group>"; };
+		84A84D6F1D168B440067B64D /* Lille.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lille.png; sourceTree = "<group>"; };
+		84A84D701D168B440067B64D /* Liverpool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Liverpool.png; sourceTree = "<group>"; };
+		84A84D711D168B440067B64D /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		84A84D721D168B440067B64D /* Lorient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lorient.png; sourceTree = "<group>"; };
+		84A84D731D168B440067B64D /* Lyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lyon.png; sourceTree = "<group>"; };
+		84A84D741D168B440067B64D /* Macedonia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Macedonia.png; sourceTree = "<group>"; };
+		84A84D751D168B440067B64D /* Madagascar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Madagascar.png; sourceTree = "<group>"; };
+		84A84D761D168B440067B64D /* Mainz05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mainz05.png; sourceTree = "<group>"; };
+		84A84D771D168B440067B64D /* Malaga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Malaga.png; sourceTree = "<group>"; };
+		84A84D781D168B440067B64D /* Mali.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mali.png; sourceTree = "<group>"; };
+		84A84D791D168B440067B64D /* Marseille.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Marseille.png; sourceTree = "<group>"; };
+		84A84D7A1D168B440067B64D /* Martinique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Martinique.png; sourceTree = "<group>"; };
+		84A84D7B1D168B440067B64D /* Mauritania.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mauritania.png; sourceTree = "<group>"; };
+		84A84D7C1D168B440067B64D /* MC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MC.png; sourceTree = "<group>"; };
+		84A84D7D1D168B440067B64D /* Metz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Metz.png; sourceTree = "<group>"; };
+		84A84D7E1D168B440067B64D /* Mexico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mexico.png; sourceTree = "<group>"; };
+		84A84D7F1D168B440067B64D /* Milan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Milan.png; sourceTree = "<group>"; };
+		84A84D801D168B440067B64D /* Moldova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moldova.png; sourceTree = "<group>"; };
+		84A84D811D168B440067B64D /* Monaco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monaco.png; sourceTree = "<group>"; };
+		84A84D821D168B440067B64D /* Monchengladbach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monchengladbach.png; sourceTree = "<group>"; };
+		84A84D831D168B440067B64D /* Montenegro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Montenegro.png; sourceTree = "<group>"; };
+		84A84D841D168B440067B64D /* Montpellier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Montpellier.png; sourceTree = "<group>"; };
+		84A84D851D168B440067B64D /* Morocco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Morocco.png; sourceTree = "<group>"; };
+		84A84D861D168B440067B64D /* Mozambique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mozambique.png; sourceTree = "<group>"; };
+		84A84D871D168B440067B64D /* MU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MU.png; sourceTree = "<group>"; };
+		84A84D881D168B440067B64D /* NagoyaGrampus8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NagoyaGrampus8.png; sourceTree = "<group>"; };
+		84A84D891D168B440067B64D /* Nantes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nantes.png; sourceTree = "<group>"; };
+		84A84D8A1D168B440067B64D /* Napoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Napoli.png; sourceTree = "<group>"; };
+		84A84D8B1D168B440067B64D /* Netherlands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Netherlands.png; sourceTree = "<group>"; };
+		84A84D8C1D168B440067B64D /* Newcastle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Newcastle.png; sourceTree = "<group>"; };
+		84A84D8D1D168B440067B64D /* NewZealand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewZealand.png; sourceTree = "<group>"; };
+		84A84D8E1D168B440067B64D /* Nice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nice.png; sourceTree = "<group>"; };
+		84A84D8F1D168B440067B64D /* Nigeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nigeria.png; sourceTree = "<group>"; };
+		84A84D901D168B440067B64D /* NorthernIreland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NorthernIreland.png; sourceTree = "<group>"; };
+		84A84D911D168B440067B64D /* Norway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Norway.png; sourceTree = "<group>"; };
+		84A84D921D168B440067B64D /* OmiyaArdija.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OmiyaArdija.png; sourceTree = "<group>"; };
+		84A84D931D168B440067B64D /* OsakaFC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OsakaFC.png; sourceTree = "<group>"; };
+		84A84D941D168B440067B64D /* Paderborn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paderborn.png; sourceTree = "<group>"; };
+		84A84D951D168B440067B64D /* Palermo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Palermo.png; sourceTree = "<group>"; };
+		84A84D961D168B440067B64D /* Paraguay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paraguay.png; sourceTree = "<group>"; };
+		84A84D971D168B440067B64D /* ParisSG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ParisSG.png; sourceTree = "<group>"; };
+		84A84D981D168B440067B64D /* Parma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Parma.png; sourceTree = "<group>"; };
+		84A84D991D168B440067B64D /* Poland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Poland.png; sourceTree = "<group>"; };
+		84A84D9A1D168B440067B64D /* Portugal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Portugal.png; sourceTree = "<group>"; };
+		84A84D9B1D168B440067B64D /* PremierLeague.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PremierLeague.png; sourceTree = "<group>"; };
+		84A84D9C1D168B440067B64D /* PrimierLeague.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrimierLeague.png; sourceTree = "<group>"; };
+		84A84D9D1D168B440067B64D /* QPR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPR.png; sourceTree = "<group>"; };
+		84A84D9E1D168B440067B64D /* RayoVallecano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RayoVallecano.png; sourceTree = "<group>"; };
+		84A84D9F1D168B440067B64D /* Real.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Real.png; sourceTree = "<group>"; };
+		84A84DA01D168B440067B64D /* RealSociedad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RealSociedad.png; sourceTree = "<group>"; };
+		84A84DA11D168B440067B64D /* Reims.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reims.png; sourceTree = "<group>"; };
+		84A84DA21D168B440067B64D /* Rennes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rennes.png; sourceTree = "<group>"; };
+		84A84DA31D168B440067B64D /* Roma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Roma.png; sourceTree = "<group>"; };
+		84A84DA41D168B440067B64D /* Romania.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Romania.png; sourceTree = "<group>"; };
+		84A84DA51D168B440067B64D /* Russia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Russia.png; sourceTree = "<group>"; };
+		84A84DA61D168B440067B64D /* Sampdoria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sampdoria.png; sourceTree = "<group>"; };
+		84A84DA71D168B440067B64D /* SanfrecceHiroshima.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SanfrecceHiroshima.png; sourceTree = "<group>"; };
+		84A84DA81D168B440067B64D /* Sassuolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sassuolo.png; sourceTree = "<group>"; };
+		84A84DA91D168B440067B64D /* Schalke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Schalke.png; sourceTree = "<group>"; };
+		84A84DAA1D168B440067B64D /* Scotland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scotland.png; sourceTree = "<group>"; };
+		84A84DAB1D168B440067B64D /* Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Selected@2x.png"; sourceTree = "<group>"; };
+		84A84DAC1D168B440067B64D /* SelectedNews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectedNews.png; sourceTree = "<group>"; };
+		84A84DAD1D168B440067B64D /* SelectedRanking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectedRanking.png; sourceTree = "<group>"; };
+		84A84DAE1D168B440067B64D /* Senegal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Senegal.png; sourceTree = "<group>"; };
+		84A84DAF1D168B440067B64D /* Serbia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Serbia.png; sourceTree = "<group>"; };
+		84A84DB01D168B440067B64D /* SerieA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SerieA.png; sourceTree = "<group>"; };
+		84A84DB11D168B440067B64D /* Sevilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sevilla.png; sourceTree = "<group>"; };
+		84A84DB21D168B440067B64D /* ShimizuSPulse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShimizuSPulse.png; sourceTree = "<group>"; };
+		84A84DB31D168B440067B64D /* Slovakia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slovakia.png; sourceTree = "<group>"; };
+		84A84DB41D168B440067B64D /* Slovenia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slovenia.png; sourceTree = "<group>"; };
+		84A84DB51D168B440067B64D /* Sociedad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sociedad.png; sourceTree = "<group>"; };
+		84A84DB61D168B440067B64D /* SouthAfrica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SouthAfrica.png; sourceTree = "<group>"; };
+		84A84DB71D168B440067B64D /* Southampton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Southampton.png; sourceTree = "<group>"; };
+		84A84DB81D168B440067B64D /* Spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spain.png; sourceTree = "<group>"; };
+		84A84DB91D168B440067B64D /* St.Etienne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = St.Etienne.png; sourceTree = "<group>"; };
+		84A84DBA1D168B440067B64D /* Stoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stoke.png; sourceTree = "<group>"; };
+		84A84DBB1D168B440067B64D /* Stuttgart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stuttgart.png; sourceTree = "<group>"; };
+		84A84DBC1D168B440067B64D /* Sunderland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sunderland.png; sourceTree = "<group>"; };
+		84A84DBD1D168B440067B64D /* Swansea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swansea.png; sourceTree = "<group>"; };
+		84A84DBE1D168B440067B64D /* Sweden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sweden.png; sourceTree = "<group>"; };
+		84A84DBF1D168B440067B64D /* Switzerland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Switzerland.png; sourceTree = "<group>"; };
+		84A84DC01D168B440067B64D /* Thailand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thailand.png; sourceTree = "<group>"; };
+		84A84DC11D168B440067B64D /* Togo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Togo.png; sourceTree = "<group>"; };
+		84A84DC21D168B440067B64D /* TokushimaVortis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TokushimaVortis.png; sourceTree = "<group>"; };
+		84A84DC31D168B440067B64D /* Torino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Torino.png; sourceTree = "<group>"; };
+		84A84DC41D168B440067B64D /* Tosu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tosu.png; sourceTree = "<group>"; };
+		84A84DC51D168B440067B64D /* Tottenham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tottenham.png; sourceTree = "<group>"; };
+		84A84DC61D168B440067B64D /* Toulouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Toulouse.png; sourceTree = "<group>"; };
+		84A84DC71D168B440067B64D /* Tunisia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tunisia.png; sourceTree = "<group>"; };
+		84A84DC81D168B440067B64D /* Turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Turkey.png; sourceTree = "<group>"; };
+		84A84DC91D168B440067B64D /* Udinese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Udinese.png; sourceTree = "<group>"; };
+		84A84DCA1D168B440067B64D /* Ukraine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ukraine.png; sourceTree = "<group>"; };
+		84A84DCB1D168B440067B64D /* UrawaRedDiamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UrawaRedDiamonds.png; sourceTree = "<group>"; };
+		84A84DCC1D168B440067B64D /* Uruguay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Uruguay.png; sourceTree = "<group>"; };
+		84A84DCD1D168B440067B64D /* US.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = US.png; sourceTree = "<group>"; };
+		84A84DCE1D168B440067B64D /* Valencia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Valencia.png; sourceTree = "<group>"; };
+		84A84DCF1D168B440067B64D /* Vallecano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vallecano.png; sourceTree = "<group>"; };
+		84A84DD01D168B440067B64D /* VegaltaSendai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VegaltaSendai.png; sourceTree = "<group>"; };
+		84A84DD11D168B440067B64D /* Venezuela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Venezuela.png; sourceTree = "<group>"; };
+		84A84DD21D168B440067B64D /* VentforetKofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VentforetKofu.png; sourceTree = "<group>"; };
+		84A84DD31D168B440067B64D /* Verona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Verona.png; sourceTree = "<group>"; };
+		84A84DD41D168B440067B64D /* VietNam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VietNam.png; sourceTree = "<group>"; };
+		84A84DD51D168B440067B64D /* Villarreal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Villarreal.png; sourceTree = "<group>"; };
+		84A84DD61D168B440067B64D /* VisselKobe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VisselKobe.png; sourceTree = "<group>"; };
+		84A84DD71D168B440067B64D /* Wales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wales.png; sourceTree = "<group>"; };
+		84A84DD81D168B440067B64D /* WestBrom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WestBrom.png; sourceTree = "<group>"; };
+		84A84DD91D168B440067B64D /* WestHam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WestHam.png; sourceTree = "<group>"; };
+		84A84DDA1D168B440067B64D /* Wolfsburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wolfsburg.png; sourceTree = "<group>"; };
+		84A84DDB1D168B440067B64D /* YokohamaFMarinos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YokohamaFMarinos.png; sourceTree = "<group>"; };
+		84A84DDC1D168B440067B64D /* Zambia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zambia.png; sourceTree = "<group>"; };
+		84C1532E1D18B96F00A50009 /* RankingAndMatchsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingAndMatchsController.swift; sourceTree = "<group>"; };
+		84C153381D18BE2200A50009 /* RankingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
+		84C153391D18BE2200A50009 /* RankingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingCell.xib; sourceTree = "<group>"; };
+		84C1533C1D18BE3B00A50009 /* MatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		84C1533D1D18BE3B00A50009 /* MatchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchCell.xib; sourceTree = "<group>"; };
+		84E9FE7A1D199D8B004A4980 /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
+		84E9FE7C1D199DE8004A4980 /* TeamInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamInfoController.swift; sourceTree = "<group>"; };
+		94BC58DD374B43C67D1A25FA /* Pods-FootBallNewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootBallNewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootBallNewUITests/Pods-FootBallNewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C03AE1E6F7C29870DE00A1F /* Pods_FootBallNewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootBallNewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C2103B4507258D923F1E74 /* Pods-FootBallNewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootBallNewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootBallNewTests/Pods-FootBallNewTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5552A6CFA1837AB300E60BC /* Pods-FootBallNewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootBallNewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootBallNewUITests/Pods-FootBallNewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAC8F1F9B983B84312765A88 /* Pods_FootBallNewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootBallNewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +610,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D01E25B0238875BE4160082 /* Pods_FootBallNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +618,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341E1E1ED709E35BAD688D77 /* Pods_FootBallNewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +626,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF2D9A6BA6DB880A43097D0 /* Pods_FootBallNewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		848FFB6D1D1E56F2006E8BE6 /* ObjectModel */ = {
+			isa = PBXGroup;
+			children = (
+				84A844261D3560210057E0CD /* Post.h */,
+				84A844271D3560210057E0CD /* Post.m */,
+				848FFB6E1D1E5713006E8BE6 /* CareerModel.swift */,
+				84A844251D3560210057E0CD /* FootBallNew-Bridging-Header.h */,
+			);
+			path = ObjectModel;
+			sourceTree = "<group>";
+		};
 		84A84C921D164EA50067B64D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +651,8 @@
 				84A84CB21D164EA50067B64D /* FootBallNewTests */,
 				84A84CBD1D164EA50067B64D /* FootBallNewUITests */,
 				84A84C9C1D164EA50067B64D /* Products */,
+				ACAADB0A46003B64910C9DFA /* Pods */,
+				F6D53A51354A0E96DE77E879 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +669,9 @@
 		84A84C9D1D164EA50067B64D /* FootBallNew */ = {
 			isa = PBXGroup;
 			children = (
+				84A84CD51D1650800067B64D /* ViewControllers */,
+				84A84CD41D1650780067B64D /* Images */,
 				84A84C9E1D164EA50067B64D /* AppDelegate.swift */,
-				84A84CA01D164EA50067B64D /* ViewController.swift */,
 				84A84CA21D164EA50067B64D /* Main.storyboard */,
 				84A84CA51D164EA50067B64D /* Assets.xcassets */,
 				84A84CA71D164EA50067B64D /* LaunchScreen.storyboard */,
@@ -125,6 +698,338 @@
 			path = FootBallNewUITests;
 			sourceTree = "<group>";
 		};
+		84A84CD41D1650780067B64D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84A84CDF1D168B440067B64D /* Albania.png */,
+				84A84CE01D168B440067B64D /* AlbirexNiigataS.png */,
+				84A84CE11D168B440067B64D /* Algeria.png */,
+				84A84CE21D168B440067B64D /* Almeria.png */,
+				84A84CE31D168B440067B64D /* Angola.png */,
+				84A84CE41D168B440067B64D /* Argentina.png */,
+				84A84CE51D168B440067B64D /* Arsenal.png */,
+				84A84CE61D168B440067B64D /* AstonVilla.png */,
+				84A84CE71D168B440067B64D /* Atalanta.png */,
+				84A84CE81D168B440067B64D /* AthleticBilbao.png */,
+				84A84CE91D168B440067B64D /* Atletico.png */,
+				84A84CEA1D168B440067B64D /* Augsburg.png */,
+				84A84CEB1D168B440067B64D /* Australia.png */,
+				84A84CEC1D168B440067B64D /* Austria.png */,
+				84A84CED1D168B440067B64D /* Background@2x.png */,
+				84A84CEE1D168B440067B64D /* Barcelona.png */,
+				84A84CEF1D168B440067B64D /* Bastia.png */,
+				84A84CF01D168B440067B64D /* Bayern.png */,
+				84A84CF11D168B440067B64D /* Belarus.png */,
+				84A84CF21D168B440067B64D /* Belgium.png */,
+				84A84CF31D168B440067B64D /* Benin.png */,
+				84A84CF41D168B440067B64D /* bg_nav.png */,
+				84A84CF51D168B440067B64D /* Bordeaux.png */,
+				84A84CF61D168B440067B64D /* Bosnia.png */,
+				84A84CF71D168B440067B64D /* Brazil.png */,
+				84A84CF81D168B440067B64D /* Bremen.png */,
+				84A84CF91D168B440067B64D /* Bulgaria.png */,
+				84A84CFA1D168B440067B64D /* Bundesliga.png */,
+				84A84CFB1D168B440067B64D /* BurkinaFaso.png */,
+				84A84CFC1D168B440067B64D /* Burnley.png */,
+				84A84CFD1D168B440067B64D /* Caen.png */,
+				84A84CFE1D168B440067B64D /* Cagliari.png */,
+				84A84CFF1D168B440067B64D /* Caledonia.png */,
+				84A84D001D168B440067B64D /* Cameroon.png */,
+				84A84D011D168B440067B64D /* Canada.png */,
+				84A84D021D168B440067B64D /* CapeVerde.png */,
+				84A84D031D168B440067B64D /* Celta.png */,
+				84A84D041D168B440067B64D /* CentralAfrican.png */,
+				84A84D051D168B440067B64D /* Cesena.png */,
+				84A84D061D168B440067B64D /* Champion.png */,
+				84A84D071D168B440067B64D /* Chelsea.png */,
+				84A84D081D168B440067B64D /* Chievo.png */,
+				84A84D091D168B440067B64D /* Chile.png */,
+				84A84D0A1D168B440067B64D /* China.png */,
+				84A84D0B1D168B440067B64D /* Colombia.png */,
+				84A84D0C1D168B440067B64D /* Comoros.png */,
+				84A84D0D1D168B440067B64D /* Congo.png */,
+				84A84D0E1D168B440067B64D /* Cordoba.png */,
+				84A84D0F1D168B440067B64D /* CostaRica.png */,
+				84A84D101D168B440067B64D /* Croatia.png */,
+				84A84D111D168B440067B64D /* Crystal.png */,
+				84A84D121D168B440067B64D /* CrystalPalace.png */,
+				84A84D131D168B440067B64D /* Czech.jpg */,
+				84A84D141D168B440067B64D /* Czech.png */,
+				84A84D151D168B440067B64D /* Default-568h@2x.png */,
+				84A84D161D168B440067B64D /* Denmark.png */,
+				84A84D171D168B440067B64D /* Deportivo.png */,
+				84A84D181D168B440067B64D /* Dortmund.png */,
+				84A84D191D168B440067B64D /* Ecuador.png */,
+				84A84D1A1D168B440067B64D /* Egypt.png */,
+				84A84D1B1D168B440067B64D /* Eibar.png */,
+				84A84D1C1D168B440067B64D /* Elche.png */,
+				84A84D1D1D168B440067B64D /* Empoli.png */,
+				84A84D1E1D168B440067B64D /* Eng.png */,
+				84A84D1F1D168B440067B64D /* Espanyol.png */,
+				84A84D201D168B440067B64D /* Everton.png */,
+				84A84D211D168B440067B64D /* Evian.png */,
+				84A84D221D168B440067B64D /* FCTokyo.png */,
+				84A84D231D168B440067B64D /* Finland.png */,
+				84A84D241D168B440067B64D /* Fiorentina.png */,
+				84A84D251D168B440067B64D /* France.png */,
+				84A84D261D168B440067B64D /* Frankfurt.png */,
+				84A84D271D168B440067B64D /* Freiburg.png */,
+				84A84D281D168B440067B64D /* Fulham.png */,
+				84A84D291D168B440067B64D /* Gabon.png */,
+				84A84D2A1D168B440067B64D /* GambaOsaka.png */,
+				84A84D2B1D168B440067B64D /* Gambia.png */,
+				84A84D2C1D168B440067B64D /* Genoa.png */,
+				84A84D2D1D168B440067B64D /* Georgia.png */,
+				84A84D2E1D168B440067B64D /* Germany.png */,
+				84A84D2F1D168B440067B64D /* Getafe.png */,
+				84A84D301D168B440067B64D /* Ghana.png */,
+				84A84D311D168B440067B64D /* Granada.png */,
+				84A84D321D168B440067B64D /* Greece.png */,
+				84A84D331D168B440067B64D /* Guadeloupe.png */,
+				84A84D341D168B440067B64D /* Guinea.png */,
+				84A84D351D168B440067B64D /* Guingamp.png */,
+				84A84D361D168B440067B64D /* Haiti.png */,
+				84A84D371D168B440067B64D /* Hamburger.png */,
+				84A84D381D168B440067B64D /* Hannover.png */,
+				84A84D391D168B440067B64D /* HerthaBerlin.png */,
+				84A84D3A1D168B440067B64D /* Hoffenheim.png */,
+				84A84D3B1D168B440067B64D /* Holland.png */,
+				84A84D3C1D168B440067B64D /* home.png */,
+				84A84D3D1D168B440067B64D /* Honduras.png */,
+				84A84D3E1D168B440067B64D /* hot.png */,
+				84A84D3F1D168B440067B64D /* Hull.png */,
+				84A84D401D168B440067B64D /* Hungary.png */,
+				84A84D411D168B440067B64D /* Iceland.png */,
+				84A84D421D168B440067B64D /* Inter.png */,
+				84A84D431D168B440067B64D /* ios */,
+				84A84D591D168B440067B64D /* Ireland.png */,
+				84A84D5A1D168B440067B64D /* Israel.png */,
+				84A84D5B1D168B440067B64D /* Italy.png */,
+				84A84D5C1D168B440067B64D /* IvoryCoast.png */,
+				84A84D5D1D168B440067B64D /* Jamaica.png */,
+				84A84D5E1D168B440067B64D /* Japan.png */,
+				84A84D5F1D168B440067B64D /* JLeague.png */,
+				84A84D601D168B440067B64D /* Juventus.png */,
+				84A84D611D168B440067B64D /* Kashima.png */,
+				84A84D621D168B440067B64D /* Kashiwa.png */,
+				84A84D631D168B440067B64D /* KawasakiFrontale.png */,
+				84A84D641D168B440067B64D /* Kenya.png */,
+				84A84D651D168B440067B64D /* Koln.png */,
+				84A84D661D168B440067B64D /* Korea.png */,
+				84A84D671D168B440067B64D /* Kosovo.png */,
+				84A84D681D168B440067B64D /* LaLiga.png */,
+				84A84D691D168B440067B64D /* Lazio.png */,
+				84A84D6A1D168B440067B64D /* Leicester.png */,
+				84A84D6B1D168B440067B64D /* Lens.png */,
+				84A84D6C1D168B440067B64D /* Levante.png */,
+				84A84D6D1D168B440067B64D /* Leverkusen.png */,
+				84A84D6E1D168B440067B64D /* Ligue1.png */,
+				84A84D6F1D168B440067B64D /* Lille.png */,
+				84A84D701D168B440067B64D /* Liverpool.png */,
+				84A84D711D168B440067B64D /* logo.jpg */,
+				84A84D721D168B440067B64D /* Lorient.png */,
+				84A84D731D168B440067B64D /* Lyon.png */,
+				84A84D741D168B440067B64D /* Macedonia.png */,
+				84A84D751D168B440067B64D /* Madagascar.png */,
+				84A84D761D168B440067B64D /* Mainz05.png */,
+				84A84D771D168B440067B64D /* Malaga.png */,
+				84A84D781D168B440067B64D /* Mali.png */,
+				84A84D791D168B440067B64D /* Marseille.png */,
+				84A84D7A1D168B440067B64D /* Martinique.png */,
+				84A84D7B1D168B440067B64D /* Mauritania.png */,
+				84A84D7C1D168B440067B64D /* MC.png */,
+				84A84D7D1D168B440067B64D /* Metz.png */,
+				84A84D7E1D168B440067B64D /* Mexico.png */,
+				84A84D7F1D168B440067B64D /* Milan.png */,
+				84A84D801D168B440067B64D /* Moldova.png */,
+				84A84D811D168B440067B64D /* Monaco.png */,
+				84A84D821D168B440067B64D /* Monchengladbach.png */,
+				84A84D831D168B440067B64D /* Montenegro.png */,
+				84A84D841D168B440067B64D /* Montpellier.png */,
+				84A84D851D168B440067B64D /* Morocco.png */,
+				84A84D861D168B440067B64D /* Mozambique.png */,
+				84A84D871D168B440067B64D /* MU.png */,
+				84A84D881D168B440067B64D /* NagoyaGrampus8.png */,
+				84A84D891D168B440067B64D /* Nantes.png */,
+				84A84D8A1D168B440067B64D /* Napoli.png */,
+				84A84D8B1D168B440067B64D /* Netherlands.png */,
+				84A84D8C1D168B440067B64D /* Newcastle.png */,
+				84A84D8D1D168B440067B64D /* NewZealand.png */,
+				84A84D8E1D168B440067B64D /* Nice.png */,
+				84A84D8F1D168B440067B64D /* Nigeria.png */,
+				84A84D901D168B440067B64D /* NorthernIreland.png */,
+				84A84D911D168B440067B64D /* Norway.png */,
+				84A84D921D168B440067B64D /* OmiyaArdija.png */,
+				84A84D931D168B440067B64D /* OsakaFC.png */,
+				84A84D941D168B440067B64D /* Paderborn.png */,
+				84A84D951D168B440067B64D /* Palermo.png */,
+				84A84D961D168B440067B64D /* Paraguay.png */,
+				84A84D971D168B440067B64D /* ParisSG.png */,
+				84A84D981D168B440067B64D /* Parma.png */,
+				84A84D991D168B440067B64D /* Poland.png */,
+				84A84D9A1D168B440067B64D /* Portugal.png */,
+				84A84D9B1D168B440067B64D /* PremierLeague.png */,
+				84A84D9C1D168B440067B64D /* PrimierLeague.png */,
+				84A84D9D1D168B440067B64D /* QPR.png */,
+				84A84D9E1D168B440067B64D /* RayoVallecano.png */,
+				84A84D9F1D168B440067B64D /* Real.png */,
+				84A84DA01D168B440067B64D /* RealSociedad.png */,
+				84A84DA11D168B440067B64D /* Reims.png */,
+				84A84DA21D168B440067B64D /* Rennes.png */,
+				84A84DA31D168B440067B64D /* Roma.png */,
+				84A84DA41D168B440067B64D /* Romania.png */,
+				84A84DA51D168B440067B64D /* Russia.png */,
+				84A84DA61D168B440067B64D /* Sampdoria.png */,
+				84A84DA71D168B440067B64D /* SanfrecceHiroshima.png */,
+				84A84DA81D168B440067B64D /* Sassuolo.png */,
+				84A84DA91D168B440067B64D /* Schalke.png */,
+				84A84DAA1D168B440067B64D /* Scotland.png */,
+				84A84DAB1D168B440067B64D /* Selected@2x.png */,
+				84A84DAC1D168B440067B64D /* SelectedNews.png */,
+				84A84DAD1D168B440067B64D /* SelectedRanking.png */,
+				84A84DAE1D168B440067B64D /* Senegal.png */,
+				84A84DAF1D168B440067B64D /* Serbia.png */,
+				84A84DB01D168B440067B64D /* SerieA.png */,
+				84A84DB11D168B440067B64D /* Sevilla.png */,
+				84A84DB21D168B440067B64D /* ShimizuSPulse.png */,
+				84A84DB31D168B440067B64D /* Slovakia.png */,
+				84A84DB41D168B440067B64D /* Slovenia.png */,
+				84A84DB51D168B440067B64D /* Sociedad.png */,
+				84A84DB61D168B440067B64D /* SouthAfrica.png */,
+				84A84DB71D168B440067B64D /* Southampton.png */,
+				84A84DB81D168B440067B64D /* Spain.png */,
+				84A84DB91D168B440067B64D /* St.Etienne.png */,
+				84A84DBA1D168B440067B64D /* Stoke.png */,
+				84A84DBB1D168B440067B64D /* Stuttgart.png */,
+				84A84DBC1D168B440067B64D /* Sunderland.png */,
+				84A84DBD1D168B440067B64D /* Swansea.png */,
+				84A84DBE1D168B440067B64D /* Sweden.png */,
+				84A84DBF1D168B440067B64D /* Switzerland.png */,
+				84A84DC01D168B440067B64D /* Thailand.png */,
+				84A84DC11D168B440067B64D /* Togo.png */,
+				84A84DC21D168B440067B64D /* TokushimaVortis.png */,
+				84A84DC31D168B440067B64D /* Torino.png */,
+				84A84DC41D168B440067B64D /* Tosu.png */,
+				84A84DC51D168B440067B64D /* Tottenham.png */,
+				84A84DC61D168B440067B64D /* Toulouse.png */,
+				84A84DC71D168B440067B64D /* Tunisia.png */,
+				84A84DC81D168B440067B64D /* Turkey.png */,
+				84A84DC91D168B440067B64D /* Udinese.png */,
+				84A84DCA1D168B440067B64D /* Ukraine.png */,
+				84A84DCB1D168B440067B64D /* UrawaRedDiamonds.png */,
+				84A84DCC1D168B440067B64D /* Uruguay.png */,
+				84A84DCD1D168B440067B64D /* US.png */,
+				84A84DCE1D168B440067B64D /* Valencia.png */,
+				84A84DCF1D168B440067B64D /* Vallecano.png */,
+				84A84DD01D168B440067B64D /* VegaltaSendai.png */,
+				84A84DD11D168B440067B64D /* Venezuela.png */,
+				84A84DD21D168B440067B64D /* VentforetKofu.png */,
+				84A84DD31D168B440067B64D /* Verona.png */,
+				84A84DD41D168B440067B64D /* VietNam.png */,
+				84A84DD51D168B440067B64D /* Villarreal.png */,
+				84A84DD61D168B440067B64D /* VisselKobe.png */,
+				84A84DD71D168B440067B64D /* Wales.png */,
+				84A84DD81D168B440067B64D /* WestBrom.png */,
+				84A84DD91D168B440067B64D /* WestHam.png */,
+				84A84DDA1D168B440067B64D /* Wolfsburg.png */,
+				84A84DDB1D168B440067B64D /* YokohamaFMarinos.png */,
+				84A84DDC1D168B440067B64D /* Zambia.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		84A84CD51D1650800067B64D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				848FFB6D1D1E56F2006E8BE6 /* ObjectModel */,
+				84A84CD61D1650800067B64D /* Cells */,
+				84A84CDB1D1650FE0067B64D /* HomeController.swift */,
+				84C1532E1D18B96F00A50009 /* RankingAndMatchsController.swift */,
+				84E9FE7A1D199D8B004A4980 /* TeamController.swift */,
+				84E9FE7C1D199DE8004A4980 /* TeamInfoController.swift */,
+				848FFB571D1E2554006E8BE6 /* PlayerInfoController.swift */,
+				846C82571D3405C0005467C7 /* GoogleService-Info.plist */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84A84CD61D1650800067B64D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84A84CDD1D16851D0067B64D /* LeagueCell.swift */,
+				84C153381D18BE2200A50009 /* RankingCell.swift */,
+				84C153391D18BE2200A50009 /* RankingCell.xib */,
+				84C1533C1D18BE3B00A50009 /* MatchCell.swift */,
+				84C1533D1D18BE3B00A50009 /* MatchCell.xib */,
+				8493574C1D1B66A300152A89 /* PlayerCell.swift */,
+				848FFB611D1E2BB9006E8BE6 /* TextNormalCell.swift */,
+				848FFB621D1E2BB9006E8BE6 /* TextNormalCell.xib */,
+				848FFB651D1E2D54006E8BE6 /* PlayerCareerCell.swift */,
+				848FFB661D1E2D54006E8BE6 /* PlayerCareerCell.xib */,
+				848FFB701D1E6353006E8BE6 /* CareerHeaderView.swift */,
+				848FFB721D1E636B006E8BE6 /* CareerHeaderView.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84A84D431D168B440067B64D /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				84A84D441D168B440067B64D /* AppIcon.appiconset */,
+				84A84D501D168B440067B64D /* Icon-60.png */,
+				84A84D511D168B440067B64D /* Icon-72.png */,
+				84A84D521D168B440067B64D /* Icon-72@2x.png */,
+				84A84D531D168B440067B64D /* Icon-Small-50.png */,
+				84A84D541D168B440067B64D /* Icon-Small-50@2x.png */,
+				84A84D551D168B440067B64D /* Icon.png */,
+				84A84D561D168B440067B64D /* Icon@2x.png */,
+				84A84D571D168B440067B64D /* iTunesArtwork.png */,
+				84A84D581D168B440067B64D /* iTunesArtwork@2x.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		84A84D441D168B440067B64D /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				84A84D451D168B440067B64D /* Contents.json */,
+				84A84D461D168B440067B64D /* Icon-40.png */,
+				84A84D471D168B440067B64D /* Icon-40@2x.png */,
+				84A84D481D168B440067B64D /* Icon-40@3x.png */,
+				84A84D491D168B440067B64D /* Icon-60@2x.png */,
+				84A84D4A1D168B440067B64D /* Icon-60@3x.png */,
+				84A84D4B1D168B440067B64D /* Icon-76.png */,
+				84A84D4C1D168B440067B64D /* Icon-76@2x.png */,
+				84A84D4D1D168B440067B64D /* Icon-Small.png */,
+				84A84D4E1D168B440067B64D /* Icon-Small@2x.png */,
+				84A84D4F1D168B440067B64D /* Icon-Small@3x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		ACAADB0A46003B64910C9DFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				475AA35B4ED7F9D7C50DB529 /* Pods-FootBallNew.debug.xcconfig */,
+				160310F463D1194BCBDD2B53 /* Pods-FootBallNew.release.xcconfig */,
+				7A1CF6CF9B9BC8A7FB8311E4 /* Pods-FootBallNewTests.debug.xcconfig */,
+				B5C2103B4507258D923F1E74 /* Pods-FootBallNewTests.release.xcconfig */,
+				94BC58DD374B43C67D1A25FA /* Pods-FootBallNewUITests.debug.xcconfig */,
+				C5552A6CFA1837AB300E60BC /* Pods-FootBallNewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6D53A51354A0E96DE77E879 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61D31CE84925F1BB3119EB56 /* Pods_FootBallNew.framework */,
+				9C03AE1E6F7C29870DE00A1F /* Pods_FootBallNewTests.framework */,
+				EAC8F1F9B983B84312765A88 /* Pods_FootBallNewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +1037,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A84CC31D164EA50067B64D /* Build configuration list for PBXNativeTarget "FootBallNew" */;
 			buildPhases = (
+				70D6CC6B8FF6ED3B1B7D1A9A /* [CP] Check Pods Manifest.lock */,
 				84A84C971D164EA50067B64D /* Sources */,
 				84A84C981D164EA50067B64D /* Frameworks */,
 				84A84C991D164EA50067B64D /* Resources */,
+				BEA71AF810DDCC98FB4BF5C4 /* [CP] Embed Pods Frameworks */,
+				5186C2F263A9F7C9AFB33F9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +1057,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A84CC61D164EA50067B64D /* Build configuration list for PBXNativeTarget "FootBallNewTests" */;
 			buildPhases = (
+				F5E26AEB797750DFACDAF81A /* [CP] Check Pods Manifest.lock */,
 				84A84CAB1D164EA50067B64D /* Sources */,
 				84A84CAC1D164EA50067B64D /* Frameworks */,
 				84A84CAD1D164EA50067B64D /* Resources */,
+				94E3B0FDA3D8F535D883F307 /* [CP] Embed Pods Frameworks */,
+				BF163776A578922FF7882C0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +1078,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A84CC91D164EA50067B64D /* Build configuration list for PBXNativeTarget "FootBallNewUITests" */;
 			buildPhases = (
+				DDD752026C7BDCDB1016818A /* [CP] Check Pods Manifest.lock */,
 				84A84CB61D164EA50067B64D /* Sources */,
 				84A84CB71D164EA50067B64D /* Frameworks */,
 				84A84CB81D164EA50067B64D /* Resources */,
+				A4B741988D25C0EEEBA8B0D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,7 +1100,7 @@
 		84A84C931D164EA50067B64D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Nguyen Hai Dang";
 				TargetAttributes = {
@@ -229,9 +1142,267 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A84E811D168B440067B64D /* Morocco.png in Resources */,
+				84A84EAE1D168B440067B64D /* ShimizuSPulse.png in Resources */,
+				84A84E391D168B440067B64D /* Holland.png in Resources */,
+				84A84E5B1D168B440067B64D /* JLeague.png in Resources */,
+				84A84DE71D168B440067B64D /* Atletico.png in Resources */,
+				84A84EB81D168B440067B64D /* Sunderland.png in Resources */,
+				84A84ED01D168B440067B64D /* VietNam.png in Resources */,
+				84A84E501D168B440067B64D /* Icon-Small-50@2x.png in Resources */,
+				84A84E1F1D168B440067B64D /* Evian.png in Resources */,
+				84A84E9E1D168B440067B64D /* Rennes.png in Resources */,
+				84A84E801D168B440067B64D /* Montpellier.png in Resources */,
+				84A84DF01D168B440067B64D /* Belgium.png in Resources */,
+				84A84E2C1D168B440067B64D /* Germany.png in Resources */,
+				84A84EB11D168B440067B64D /* Sociedad.png in Resources */,
+				84A84E161D168B440067B64D /* Dortmund.png in Resources */,
+				84A84E171D168B440067B64D /* Ecuador.png in Resources */,
+				84A84E701D168B440067B64D /* Macedonia.png in Resources */,
+				84A84E041D168B440067B64D /* Champion.png in Resources */,
+				84A84E371D168B440067B64D /* HerthaBerlin.png in Resources */,
+				84A84EBF1D168B440067B64D /* Torino.png in Resources */,
+				84A84E3C1D168B440067B64D /* hot.png in Resources */,
+				84A84E711D168B440067B64D /* Madagascar.png in Resources */,
+				84A84EA61D168B440067B64D /* Scotland.png in Resources */,
+				848FFB681D1E2D54006E8BE6 /* PlayerCareerCell.xib in Resources */,
+				84A84EB71D168B440067B64D /* Stuttgart.png in Resources */,
+				84A84ED61D168B440067B64D /* Wolfsburg.png in Resources */,
+				84A84DDE1D168B440067B64D /* AlbirexNiigataS.png in Resources */,
+				84A84EBA1D168B440067B64D /* Sweden.png in Resources */,
+				84A84E511D168B440067B64D /* Icon.png in Resources */,
+				84A84DEF1D168B440067B64D /* Belarus.png in Resources */,
+				84A84E951D168B440067B64D /* Poland.png in Resources */,
+				84A84E941D168B440067B64D /* Parma.png in Resources */,
+				84A84E3D1D168B440067B64D /* Hull.png in Resources */,
+				84A84E571D168B440067B64D /* Italy.png in Resources */,
 				84A84CA91D164EA50067B64D /* LaunchScreen.storyboard in Resources */,
+				84A84E251D168B440067B64D /* Freiburg.png in Resources */,
+				84A84E241D168B440067B64D /* Frankfurt.png in Resources */,
+				84A84ED81D168B440067B64D /* Zambia.png in Resources */,
+				84A84E5C1D168B440067B64D /* Juventus.png in Resources */,
+				84A84E671D168B440067B64D /* Lens.png in Resources */,
+				84A84EAD1D168B440067B64D /* Sevilla.png in Resources */,
+				84A84DF51D168B440067B64D /* Brazil.png in Resources */,
+				84A84E471D168B440067B64D /* Icon-76.png in Resources */,
+				84A84E781D168B440067B64D /* MC.png in Resources */,
+				84A84E7F1D168B440067B64D /* Montenegro.png in Resources */,
+				84A84E791D168B440067B64D /* Metz.png in Resources */,
+				84A84E611D168B440067B64D /* Koln.png in Resources */,
+				84A84E661D168B440067B64D /* Leicester.png in Resources */,
+				84A84E971D168B440067B64D /* PremierLeague.png in Resources */,
+				84A84E351D168B440067B64D /* Hamburger.png in Resources */,
+				84A84E8C1D168B440067B64D /* NorthernIreland.png in Resources */,
+				84A84DFC1D168B440067B64D /* Cagliari.png in Resources */,
+				84A84E531D168B440067B64D /* iTunesArtwork.png in Resources */,
+				84A84EBD1D168B440067B64D /* Togo.png in Resources */,
+				84A84E4A1D168B440067B64D /* Icon-Small@2x.png in Resources */,
+				848FFB731D1E636B006E8BE6 /* CareerHeaderView.xib in Resources */,
 				84A84CA61D164EA50067B64D /* Assets.xcassets in Resources */,
+				84A84E081D168B440067B64D /* China.png in Resources */,
+				84A84E761D168B440067B64D /* Martinique.png in Resources */,
+				84A84DEA1D168B440067B64D /* Austria.png in Resources */,
+				84A84E991D168B440067B64D /* QPR.png in Resources */,
+				84A84E201D168B440067B64D /* FCTokyo.png in Resources */,
+				84A84DF81D168B440067B64D /* Bundesliga.png in Resources */,
+				84A84DF31D168B440067B64D /* Bordeaux.png in Resources */,
+				84A84E8D1D168B440067B64D /* Norway.png in Resources */,
+				84A84E4F1D168B440067B64D /* Icon-Small-50.png in Resources */,
+				84A84E931D168B440067B64D /* ParisSG.png in Resources */,
+				84A84E831D168B440067B64D /* MU.png in Resources */,
+				84A84DDF1D168B440067B64D /* Algeria.png in Resources */,
+				84A84E441D168B440067B64D /* Icon-40@3x.png in Resources */,
+				84A84EB01D168B440067B64D /* Slovenia.png in Resources */,
+				84A84EAF1D168B440067B64D /* Slovakia.png in Resources */,
+				84A84E551D168B440067B64D /* Ireland.png in Resources */,
+				84A84E6C1D168B440067B64D /* Liverpool.png in Resources */,
+				84A84E0A1D168B440067B64D /* Comoros.png in Resources */,
+				84A84E601D168B440067B64D /* Kenya.png in Resources */,
+				84A84E591D168B440067B64D /* Jamaica.png in Resources */,
+				84A84EC01D168B440067B64D /* Tosu.png in Resources */,
+				84A84E031D168B440067B64D /* Cesena.png in Resources */,
+				84A84E561D168B440067B64D /* Israel.png in Resources */,
+				84A84DFD1D168B440067B64D /* Caledonia.png in Resources */,
+				84A84E581D168B440067B64D /* IvoryCoast.png in Resources */,
+				84A84E071D168B440067B64D /* Chile.png in Resources */,
+				84A84EAB1D168B440067B64D /* Serbia.png in Resources */,
+				84A84ED71D168B440067B64D /* YokohamaFMarinos.png in Resources */,
+				84A84E891D168B440067B64D /* NewZealand.png in Resources */,
+				84A84EC41D168B440067B64D /* Turkey.png in Resources */,
+				84A84E1C1D168B440067B64D /* Eng.png in Resources */,
+				84A84E651D168B440067B64D /* Lazio.png in Resources */,
+				84A84E341D168B440067B64D /* Haiti.png in Resources */,
+				84A84E051D168B440067B64D /* Chelsea.png in Resources */,
+				84A84EB91D168B440067B64D /* Swansea.png in Resources */,
+				84A84E1D1D168B440067B64D /* Espanyol.png in Resources */,
+				84A84ECD1D168B440067B64D /* Venezuela.png in Resources */,
+				84A84EA91D168B440067B64D /* SelectedRanking.png in Resources */,
+				84A84E5A1D168B440067B64D /* Japan.png in Resources */,
+				84A84E011D168B440067B64D /* Celta.png in Resources */,
+				84A84E4E1D168B440067B64D /* Icon-72@2x.png in Resources */,
+				84A84EA01D168B440067B64D /* Romania.png in Resources */,
+				84A84E851D168B440067B64D /* Nantes.png in Resources */,
+				84A84EA21D168B440067B64D /* Sampdoria.png in Resources */,
+				84A84E0B1D168B440067B64D /* Congo.png in Resources */,
+				84A84ECA1D168B440067B64D /* Valencia.png in Resources */,
+				84A84DE61D168B440067B64D /* AthleticBilbao.png in Resources */,
+				84A84E9B1D168B440067B64D /* Real.png in Resources */,
+				84A84E9C1D168B440067B64D /* RealSociedad.png in Resources */,
+				84A84E901D168B440067B64D /* Paderborn.png in Resources */,
+				84A84E2E1D168B440067B64D /* Ghana.png in Resources */,
+				84A84DF61D168B440067B64D /* Bremen.png in Resources */,
+				84A84E841D168B440067B64D /* NagoyaGrampus8.png in Resources */,
+				84A84E091D168B440067B64D /* Colombia.png in Resources */,
+				84A84EC71D168B440067B64D /* UrawaRedDiamonds.png in Resources */,
+				84A84EBB1D168B440067B64D /* Switzerland.png in Resources */,
+				84A84EC21D168B440067B64D /* Toulouse.png in Resources */,
+				84A84E9A1D168B440067B64D /* RayoVallecano.png in Resources */,
+				84A84E8F1D168B440067B64D /* OsakaFC.png in Resources */,
+				84A84E861D168B440067B64D /* Napoli.png in Resources */,
+				84A84E0C1D168B440067B64D /* Cordoba.png in Resources */,
+				84A84DF71D168B440067B64D /* Bulgaria.png in Resources */,
+				84A84E521D168B440067B64D /* Icon@2x.png in Resources */,
+				84A84E4D1D168B440067B64D /* Icon-72.png in Resources */,
+				84A84E3F1D168B440067B64D /* Iceland.png in Resources */,
+				84A84E2F1D168B440067B64D /* Granada.png in Resources */,
+				84A84E001D168B440067B64D /* CapeVerde.png in Resources */,
+				84A84E1A1D168B440067B64D /* Elche.png in Resources */,
+				84A84EB31D168B440067B64D /* Southampton.png in Resources */,
+				84C1533F1D18BE3B00A50009 /* MatchCell.xib in Resources */,
+				84A84E731D168B440067B64D /* Malaga.png in Resources */,
+				84A84EBC1D168B440067B64D /* Thailand.png in Resources */,
+				84A84E641D168B440067B64D /* LaLiga.png in Resources */,
+				84A84E7E1D168B440067B64D /* Monchengladbach.png in Resources */,
+				84A84E6B1D168B440067B64D /* Lille.png in Resources */,
+				84A84DE91D168B440067B64D /* Australia.png in Resources */,
+				84A84ED51D168B440067B64D /* WestHam.png in Resources */,
+				84A84E7A1D168B440067B64D /* Mexico.png in Resources */,
+				84A84DE41D168B440067B64D /* AstonVilla.png in Resources */,
+				84A84E911D168B440067B64D /* Palermo.png in Resources */,
+				84A84E331D168B440067B64D /* Guingamp.png in Resources */,
+				84A84E191D168B440067B64D /* Eibar.png in Resources */,
+				84A84E0D1D168B440067B64D /* CostaRica.png in Resources */,
+				846C82581D3405C0005467C7 /* GoogleService-Info.plist in Resources */,
+				84A84EA51D168B440067B64D /* Schalke.png in Resources */,
+				84A84ECC1D168B440067B64D /* VegaltaSendai.png in Resources */,
+				84A84EBE1D168B440067B64D /* TokushimaVortis.png in Resources */,
+				84A84E6E1D168B440067B64D /* Lorient.png in Resources */,
+				84A84DEC1D168B440067B64D /* Barcelona.png in Resources */,
+				84A84E1B1D168B440067B64D /* Empoli.png in Resources */,
+				84A84E0E1D168B440067B64D /* Croatia.png in Resources */,
+				84A84E5E1D168B440067B64D /* Kashiwa.png in Resources */,
+				84A84E961D168B440067B64D /* Portugal.png in Resources */,
+				848FFB641D1E2BB9006E8BE6 /* TextNormalCell.xib in Resources */,
+				84A84E361D168B440067B64D /* Hannover.png in Resources */,
+				84A84DFF1D168B440067B64D /* Canada.png in Resources */,
+				84A84E281D168B440067B64D /* GambaOsaka.png in Resources */,
+				84A84E881D168B440067B64D /* Newcastle.png in Resources */,
+				84A84EA41D168B440067B64D /* Sassuolo.png in Resources */,
+				84A84E821D168B440067B64D /* Mozambique.png in Resources */,
+				84A84DE51D168B440067B64D /* Atalanta.png in Resources */,
+				84A84E771D168B440067B64D /* Mauritania.png in Resources */,
+				84A84EA81D168B440067B64D /* SelectedNews.png in Resources */,
+				84A84E291D168B440067B64D /* Gambia.png in Resources */,
+				84A84E421D168B440067B64D /* Icon-40.png in Resources */,
+				84A84E461D168B440067B64D /* Icon-60@3x.png in Resources */,
+				84A84ED31D168B440067B64D /* Wales.png in Resources */,
+				84A84E6D1D168B440067B64D /* logo.jpg in Resources */,
+				84A84E7D1D168B440067B64D /* Monaco.png in Resources */,
+				84A84E871D168B440067B64D /* Netherlands.png in Resources */,
+				84A84E621D168B440067B64D /* Korea.png in Resources */,
+				84A84ED41D168B440067B64D /* WestBrom.png in Resources */,
+				84A84E7B1D168B440067B64D /* Milan.png in Resources */,
+				84A84E751D168B440067B64D /* Marseille.png in Resources */,
+				84A84EA31D168B440067B64D /* SanfrecceHiroshima.png in Resources */,
+				84A84E411D168B440067B64D /* Contents.json in Resources */,
+				84A84E491D168B440067B64D /* Icon-Small.png in Resources */,
+				84A84E0F1D168B440067B64D /* Crystal.png in Resources */,
+				84A84E981D168B440067B64D /* PrimierLeague.png in Resources */,
+				84A84E131D168B440067B64D /* Default-568h@2x.png in Resources */,
+				84A84E221D168B440067B64D /* Fiorentina.png in Resources */,
+				84A84E8B1D168B440067B64D /* Nigeria.png in Resources */,
+				84A84DDD1D168B440067B64D /* Albania.png in Resources */,
+				84A84E181D168B440067B64D /* Egypt.png in Resources */,
 				84A84CA41D164EA50067B64D /* Main.storyboard in Resources */,
+				84A84EC11D168B440067B64D /* Tottenham.png in Resources */,
+				84A84EA11D168B440067B64D /* Russia.png in Resources */,
+				84A84E121D168B440067B64D /* Czech.png in Resources */,
+				84A84E8A1D168B440067B64D /* Nice.png in Resources */,
+				84A84E2B1D168B440067B64D /* Georgia.png in Resources */,
+				84A84E231D168B440067B64D /* France.png in Resources */,
+				84A84EC31D168B440067B64D /* Tunisia.png in Resources */,
+				84A84E2D1D168B440067B64D /* Getafe.png in Resources */,
+				84A84E9F1D168B440067B64D /* Roma.png in Resources */,
+				84A84E311D168B440067B64D /* Guadeloupe.png in Resources */,
+				84A84E3B1D168B440067B64D /* Honduras.png in Resources */,
+				84A84E691D168B440067B64D /* Leverkusen.png in Resources */,
+				84A84ECF1D168B440067B64D /* Verona.png in Resources */,
+				84A84E4B1D168B440067B64D /* Icon-Small@3x.png in Resources */,
+				84A84EC61D168B440067B64D /* Ukraine.png in Resources */,
+				84A84E111D168B440067B64D /* Czech.jpg in Resources */,
+				84A84E6A1D168B440067B64D /* Ligue1.png in Resources */,
+				84A84E721D168B440067B64D /* Mainz05.png in Resources */,
+				84A84E401D168B440067B64D /* Inter.png in Resources */,
+				84A84ED21D168B440067B64D /* VisselKobe.png in Resources */,
+				84A84EC81D168B440067B64D /* Uruguay.png in Resources */,
+				84A84E211D168B440067B64D /* Finland.png in Resources */,
+				84A84E481D168B440067B64D /* Icon-76@2x.png in Resources */,
+				84A84DEB1D168B440067B64D /* Background@2x.png in Resources */,
+				84A84DF11D168B440067B64D /* Benin.png in Resources */,
+				84C1533B1D18BE2200A50009 /* RankingCell.xib in Resources */,
+				84A84E301D168B440067B64D /* Greece.png in Resources */,
+				84A84E101D168B440067B64D /* CrystalPalace.png in Resources */,
+				84A84EAC1D168B440067B64D /* SerieA.png in Resources */,
+				84A84DF21D168B440067B64D /* bg_nav.png in Resources */,
+				84A84E3A1D168B440067B64D /* home.png in Resources */,
+				84A84DF91D168B440067B64D /* BurkinaFaso.png in Resources */,
+				84A84EB41D168B440067B64D /* Spain.png in Resources */,
+				84A84EAA1D168B440067B64D /* Senegal.png in Resources */,
+				84A84E9D1D168B440067B64D /* Reims.png in Resources */,
+				84A84DE31D168B440067B64D /* Arsenal.png in Resources */,
+				84A84E061D168B440067B64D /* Chievo.png in Resources */,
+				84A84E5F1D168B440067B64D /* KawasakiFrontale.png in Resources */,
+				84A84ED11D168B440067B64D /* Villarreal.png in Resources */,
+				84A84E381D168B440067B64D /* Hoffenheim.png in Resources */,
+				84A84EB21D168B440067B64D /* SouthAfrica.png in Resources */,
+				84A84EB61D168B440067B64D /* Stoke.png in Resources */,
+				84A84DFA1D168B440067B64D /* Burnley.png in Resources */,
+				84A84E681D168B440067B64D /* Levante.png in Resources */,
+				84A84DE81D168B440067B64D /* Augsburg.png in Resources */,
+				84A84EB51D168B440067B64D /* St.Etienne.png in Resources */,
+				84A84DE21D168B440067B64D /* Argentina.png in Resources */,
+				84A84EC51D168B440067B64D /* Udinese.png in Resources */,
+				84A84E3E1D168B440067B64D /* Hungary.png in Resources */,
+				84A84ECB1D168B440067B64D /* Vallecano.png in Resources */,
+				84A84E271D168B440067B64D /* Gabon.png in Resources */,
+				84A84DED1D168B440067B64D /* Bastia.png in Resources */,
+				84A84DE01D168B440067B64D /* Almeria.png in Resources */,
+				84A84E431D168B440067B64D /* Icon-40@2x.png in Resources */,
+				84A84E451D168B440067B64D /* Icon-60@2x.png in Resources */,
+				84A84E921D168B440067B64D /* Paraguay.png in Resources */,
+				84A84DE11D168B440067B64D /* Angola.png in Resources */,
+				84A84E1E1D168B440067B64D /* Everton.png in Resources */,
+				84A84DEE1D168B440067B64D /* Bayern.png in Resources */,
+				84A84E7C1D168B440067B64D /* Moldova.png in Resources */,
+				84A84E4C1D168B440067B64D /* Icon-60.png in Resources */,
+				84A84DFB1D168B440067B64D /* Caen.png in Resources */,
+				84A84E741D168B440067B64D /* Mali.png in Resources */,
+				84A84EC91D168B440067B64D /* US.png in Resources */,
+				84A84E141D168B440067B64D /* Denmark.png in Resources */,
+				84A84E321D168B440067B64D /* Guinea.png in Resources */,
+				84A84E5D1D168B440067B64D /* Kashima.png in Resources */,
+				84A84E631D168B440067B64D /* Kosovo.png in Resources */,
+				84A84E151D168B440067B64D /* Deportivo.png in Resources */,
+				84A84E021D168B440067B64D /* CentralAfrican.png in Resources */,
+				84A84E541D168B440067B64D /* iTunesArtwork@2x.png in Resources */,
+				84A84ECE1D168B440067B64D /* VentforetKofu.png in Resources */,
+				84A84DF41D168B440067B64D /* Bosnia.png in Resources */,
+				84A84E261D168B440067B64D /* Fulham.png in Resources */,
+				84A84E6F1D168B440067B64D /* Lyon.png in Resources */,
+				84A84E8E1D168B440067B64D /* OmiyaArdija.png in Resources */,
+				84A84DFE1D168B440067B64D /* Cameroon.png in Resources */,
+				84A84E2A1D168B440067B64D /* Genoa.png in Resources */,
+				84A84EA71D168B440067B64D /* Selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +1422,148 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5186C2F263A9F7C9AFB33F9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootBallNew/Pods-FootBallNew-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70D6CC6B8FF6ED3B1B7D1A9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94E3B0FDA3D8F535D883F307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootBallNewTests/Pods-FootBallNewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B741988D25C0EEEBA8B0D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootBallNewUITests/Pods-FootBallNewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA71AF810DDCC98FB4BF5C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootBallNew/Pods-FootBallNew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF163776A578922FF7882C0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootBallNewTests/Pods-FootBallNewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD752026C7BDCDB1016818A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E26AEB797750DFACDAF81A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84A84C971D164EA50067B64D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A84CA11D164EA50067B64D /* ViewController.swift in Sources */,
+				84C1532F1D18B96F00A50009 /* RankingAndMatchsController.swift in Sources */,
+				848FFB6F1D1E5713006E8BE6 /* CareerModel.swift in Sources */,
+				84A84CDC1D1650FE0067B64D /* HomeController.swift in Sources */,
+				84E9FE7D1D199DE8004A4980 /* TeamInfoController.swift in Sources */,
+				8493574D1D1B66A300152A89 /* PlayerCell.swift in Sources */,
+				848FFB671D1E2D54006E8BE6 /* PlayerCareerCell.swift in Sources */,
+				848FFB631D1E2BB9006E8BE6 /* TextNormalCell.swift in Sources */,
+				84A84CDE1D16851D0067B64D /* LeagueCell.swift in Sources */,
+				84C1533E1D18BE3B00A50009 /* MatchCell.swift in Sources */,
+				848FFB581D1E2554006E8BE6 /* PlayerInfoController.swift in Sources */,
+				84A844281D3560210057E0CD /* Post.m in Sources */,
+				84E9FE7B1D199D8B004A4980 /* TeamController.swift in Sources */,
+				848FFB711D1E6353006E8BE6 /* CareerHeaderView.swift in Sources */,
+				84C1533A1D18BE2200A50009 /* RankingCell.swift in Sources */,
 				84A84C9F1D164EA50067B64D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +1658,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,6 +1697,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -397,28 +1706,66 @@
 		};
 		84A84CC41D164EA50067B64D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475AA35B4ED7F9D7C50DB529 /* Pods-FootBallNew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FootBallNew/SDK/AdMob",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Analytics",
+					"$(PROJECT_DIR)/FootBallNew/SDK/AppIndexing",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Auth",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Crash",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Database",
+					"$(PROJECT_DIR)/FootBallNew/SDK/DynamicLinks",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Invites",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Messaging",
+					"$(PROJECT_DIR)/FootBallNew/SDK/RemoteConfig",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Storage",
+				);
 				INFOPLIST_FILE = FootBallNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.browan.FootBallNew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beacon.FootBallNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/NguyenHaiDang/Desktop/FootBallNew/FootBallNew/ViewControllers/ObjectModel/FootBallNew-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		84A84CC51D164EA50067B64D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 160310F463D1194BCBDD2B53 /* Pods-FootBallNew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FootBallNew/SDK/AdMob",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Analytics",
+					"$(PROJECT_DIR)/FootBallNew/SDK/AppIndexing",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Auth",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Crash",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Database",
+					"$(PROJECT_DIR)/FootBallNew/SDK/DynamicLinks",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Invites",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Messaging",
+					"$(PROJECT_DIR)/FootBallNew/SDK/RemoteConfig",
+					"$(PROJECT_DIR)/FootBallNew/SDK/Storage",
+				);
 				INFOPLIST_FILE = FootBallNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.browan.FootBallNew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beacon.FootBallNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/NguyenHaiDang/Desktop/FootBallNew/FootBallNew/ViewControllers/ObjectModel/FootBallNew-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		84A84CC71D164EA50067B64D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1CF6CF9B9BC8A7FB8311E4 /* Pods-FootBallNewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FootBallNewTests/Info.plist;
@@ -431,6 +1778,7 @@
 		};
 		84A84CC81D164EA50067B64D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C2103B4507258D923F1E74 /* Pods-FootBallNewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FootBallNewTests/Info.plist;
@@ -443,6 +1791,7 @@
 		};
 		84A84CCA1D164EA50067B64D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94BC58DD374B43C67D1A25FA /* Pods-FootBallNewUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FootBallNewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -455,6 +1804,7 @@
 		};
 		84A84CCB1D164EA50067B64D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5552A6CFA1837AB300E60BC /* Pods-FootBallNewUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FootBallNewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +1834,7 @@
 				84A84CC51D164EA50067B64D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A84CC61D164EA50067B64D /* Build configuration list for PBXNativeTarget "FootBallNewTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +1843,7 @@
 				84A84CC81D164EA50067B64D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A84CC91D164EA50067B64D /* Build configuration list for PBXNativeTarget "FootBallNewUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +1852,7 @@
 				84A84CCB1D164EA50067B64D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
