@@ -22,19 +22,25 @@ class HomeController: UIViewController,UICollectionViewDelegate,UICollectionView
     var commentsRef : FIRDatabaseReference!
     var refHandle: FIRDatabaseHandle?
     let post: Post = Post()
+    var postKey = "0"
+    
+    lazy var ref: FIRDatabaseReference = FIRDatabase.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         mCollectionView.contentInset = UIEdgeInsetsMake(-44, 0, 0, 0);
+        postRef = ref.child("results").child(postKey)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         
-        
-        refHandle = postRef.observeEventType(FIRDataEventType.Value, withBlock: { (snapshot) in
-            let postDict = snapshot.value as! [String : AnyObject]
-            self.post.setValuesForKeysWithDictionary(postDict)
+        refHandle = postRef.observeEventType(.Value, withBlock: { snapshot in
+                        let postDict = snapshot.value as! [String : AnyObject]
+                        self.post.setValuesForKeysWithDictionary(postDict)
             NSLog("value:%@", self.post.title);
             // [START_EXCLUDE]
-  
+            
             NSLog("alalalala");
             // [END_EXCLUDE]
         })

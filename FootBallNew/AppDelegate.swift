@@ -15,15 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let mainStoryBoard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle());
     
-
-    
 //    var  refHandle = FIRDatabaseHandle();
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         FIRApp.configure();
-        FIRDatabase.database().reference();
+        FIRDatabase.database().reference()
         // Override point for customization after application launch.
         return true
     }
