@@ -35,15 +35,15 @@ class HomeController: UIViewController,UICollectionViewDelegate,UICollectionView
     
     override func viewWillAppear(animated: Bool) {
         
-        refHandle = postRef.observeEventType(.Value, withBlock: { snapshot in
-            postDict : NSArray = snapshot.value
-
-            NSLog("value:%i", (postDict?.count)!);
-            // [START_EXCLUDE]
-            
-            NSLog("alalalala");
-            // [END_EXCLUDE]
-        })
+//        refHandle = postRef.observeEventType(.Value, withBlock: { snapshot in
+//            let postDict = snapshot.value as! NSDictionary
+//
+//            NSLog("value:%i", (postDict.count));
+//            // [START_EXCLUDE]
+//            
+//            NSLog("alalalala");
+//            // [END_EXCLUDE]
+//        })
         
     }
     
