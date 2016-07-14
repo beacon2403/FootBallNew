@@ -12,6 +12,8 @@ class RankingAndMatchsController: UIViewController,UITableViewDataSource,UITable
     @IBOutlet weak var mSegment: UISegmentedControl!
     @IBOutlet weak var mTableView: UITableView!
     
+    var strLeague : NSString?;
+    
     @IBAction func actionChangeSegment(sender: AnyObject) {
         mTableView.reloadData();
     }
@@ -69,6 +71,7 @@ class RankingAndMatchsController: UIViewController,UITableViewDataSource,UITable
         {
             // Team Matching
             let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle());
+            
             let teamVc = storyboard.instantiateViewControllerWithIdentifier("TeamController");
             self.navigationController?.pushViewController(teamVc, animated: true);
         }else

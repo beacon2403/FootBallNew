@@ -11,17 +11,22 @@ import Firebase
 
 class ToolFunction: NSObject {
 
+
     
-    class func retrievePlayerData(childRef : FIRDatabaseReference! ,var messages: [FIRDataSnapshot]!, completion : (result : NSArray) -> Void){
+//--------- GET DATABASE FROM FIREBASE ----------
+    
+    class func retrievePlayerData(childRef : FIRDatabaseReference! , completion : (result : NSDictionary) -> Void){
     
         childRef.observeEventType(.Value, withBlock: {snapshot in
             
-            messages.append(snapshot)
-            completion(result: messages);
+            let dictResult = snapshot.value as! NSDictionary
+            completion(result: dictResult);
         
         })
         NSLog("finished process get data from Firebase server");
     
     }
+    
+
     
 }

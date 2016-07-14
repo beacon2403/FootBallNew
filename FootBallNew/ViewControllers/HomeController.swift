@@ -20,10 +20,10 @@ class HomeController: UIViewController,UICollectionViewDelegate,UICollectionView
     var arrLogoImg:[String] = ["PremierLeague","LaLiga","SerieA","Bundesliga","Ligue1","JLeague"];
     var postRef: FIRDatabaseReference!
     var commentsRef : FIRDatabaseReference!
-    var refHandle: FIRDatabaseHandle?
+
     let post: Post = Post()
     var postKey = "0"
-    
+
     lazy var ref: FIRDatabaseReference = FIRDatabase.database().reference()
     
     override func viewDidLoad() {
@@ -35,6 +35,12 @@ class HomeController: UIViewController,UICollectionViewDelegate,UICollectionView
     
     override func viewWillAppear(animated: Bool) {
         
+        ToolFunction.retrievePlayerData(postRef, completion: {result in
+            
+            NSLog("so luong :%i",result.count);
+        
+        
+        });
 //        refHandle = postRef.observeEventType(.Value, withBlock: { snapshot in
 //            let postDict = snapshot.value as! NSDictionary
 //
@@ -70,7 +76,8 @@ class HomeController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle());
-        let vc = storyboard.instantiateViewControllerWithIdentifier("RankingAndMatchsController");
+        let vc = storyboard.instantiateViewControllerWithIdentifier("RankingAndMatchsController") as! RankingAndMatchsController;
+        vc.strLeague = "PremierLeague";
         self.navigationController?.pushViewController(vc, animated: true);
     }
 }
