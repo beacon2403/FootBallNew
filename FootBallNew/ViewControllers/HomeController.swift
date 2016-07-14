@@ -36,9 +36,9 @@ class HomeController: UIViewController,UICollectionViewDelegate,UICollectionView
     override func viewWillAppear(animated: Bool) {
         
         refHandle = postRef.observeEventType(.Value, withBlock: { snapshot in
-                        let postDict = snapshot.value as! [String : AnyObject]
-                        self.post.setValuesForKeysWithDictionary(postDict)
-            NSLog("value:%@", self.post.title);
+            postDict : NSArray = snapshot.value
+
+            NSLog("value:%i", (postDict?.count)!);
             // [START_EXCLUDE]
             
             NSLog("alalalala");

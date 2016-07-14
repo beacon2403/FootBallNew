@@ -281,6 +281,7 @@
 		84A84ED61D168B440067B64D /* Wolfsburg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DDA1D168B440067B64D /* Wolfsburg.png */; };
 		84A84ED71D168B440067B64D /* YokohamaFMarinos.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DDB1D168B440067B64D /* YokohamaFMarinos.png */; };
 		84A84ED81D168B440067B64D /* Zambia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A84DDC1D168B440067B64D /* Zambia.png */; };
+		84A952261D3767F800BD4CCE /* ToolFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A952251D3767F800BD4CCE /* ToolFunction.swift */; };
 		84C1532F1D18B96F00A50009 /* RankingAndMatchsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1532E1D18B96F00A50009 /* RankingAndMatchsController.swift */; };
 		84C1533A1D18BE2200A50009 /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C153381D18BE2200A50009 /* RankingCell.swift */; };
 		84C1533B1D18BE2200A50009 /* RankingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C153391D18BE2200A50009 /* RankingCell.xib */; };
@@ -591,6 +592,7 @@
 		84A84DDA1D168B440067B64D /* Wolfsburg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wolfsburg.png; sourceTree = "<group>"; };
 		84A84DDB1D168B440067B64D /* YokohamaFMarinos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YokohamaFMarinos.png; sourceTree = "<group>"; };
 		84A84DDC1D168B440067B64D /* Zambia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zambia.png; sourceTree = "<group>"; };
+		84A952251D3767F800BD4CCE /* ToolFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolFunction.swift; path = ToolFunction/ToolFunction.swift; sourceTree = "<group>"; };
 		84C1532E1D18B96F00A50009 /* RankingAndMatchsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingAndMatchsController.swift; sourceTree = "<group>"; };
 		84C153381D18BE2200A50009 /* RankingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
 		84C153391D18BE2200A50009 /* RankingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingCell.xib; sourceTree = "<group>"; };
@@ -941,6 +943,7 @@
 		84A84CD51D1650800067B64D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				84A952241D374F5F00BD4CCE /* ToolFunction */,
 				848FFB6D1D1E56F2006E8BE6 /* ObjectModel */,
 				84A84CD61D1650800067B64D /* Cells */,
 				84A84CDB1D1650FE0067B64D /* HomeController.swift */,
@@ -1005,6 +1008,14 @@
 				84A84D4F1D168B440067B64D /* Icon-Small@3x.png */,
 			);
 			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		84A952241D374F5F00BD4CCE /* ToolFunction */ = {
+			isa = PBXGroup;
+			children = (
+				84A952251D3767F800BD4CCE /* ToolFunction.swift */,
+			);
+			name = ToolFunction;
 			sourceTree = "<group>";
 		};
 		ACAADB0A46003B64910C9DFA /* Pods */ = {
@@ -1551,6 +1562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C1532F1D18B96F00A50009 /* RankingAndMatchsController.swift in Sources */,
+				84A952261D3767F800BD4CCE /* ToolFunction.swift in Sources */,
 				848FFB6F1D1E5713006E8BE6 /* CareerModel.swift in Sources */,
 				84A84CDC1D1650FE0067B64D /* HomeController.swift in Sources */,
 				84E9FE7D1D199DE8004A4980 /* TeamInfoController.swift in Sources */,
