@@ -15,11 +15,12 @@ class ToolFunction: NSObject {
     
 //--------- GET DATABASE FROM FIREBASE ----------
     
-    class func retrievePlayerData(childRef : FIRDatabaseReference! , completion : (result : NSDictionary) -> Void){
+    class func retrieveData(childRef : FIRDatabaseReference! , completion : (result : NSDictionary) -> Void){
     
         childRef.observeEventType(.Value, withBlock: {snapshot in
             
             let dictResult = snapshot.value as! NSDictionary
+            NSLog(snapshot.key);
             completion(result: dictResult);
         
         })
@@ -27,6 +28,31 @@ class ToolFunction: NSObject {
     
     }
     
-
+    class func changedDataEvent(childRef : FIRDatabaseReference! , completion : (result : NSDictionary) -> Void){
+        
+        childRef.observeEventType(.ChildChanged, withBlock: {snapshot in
+            
+            var dictResult: Dictionary<String, String> = [:]
+            let strKey :String = snapshot.key
+            dictResult["key"] = strKey
+            
+            if ((snapshot.value?.isKindOfClass(NSNumber)) == true){
+            
+                let strValue = snapshot.value as! NSNumber;
+                dictResult["value"] = strValue.stringValue ;
+                
+            }else{
+            
+                let strValue = snapshot.value as! String;
+                dictResult["value"] = strValue ;
+                
+            }
+            
+            completion(result: dictResult);
+            
+        })
+        NSLog("finished process get data from Firebase server");
+        
+    }
     
 }

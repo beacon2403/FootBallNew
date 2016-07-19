@@ -31,16 +31,20 @@ class HomeController: UIViewController,UICollectionViewDelegate,UICollectionView
         // Do any additional setup after loading the view, typically from a nib.
         mCollectionView.contentInset = UIEdgeInsetsMake(-44, 0, 0, 0);
         postRef = ref.child("results").child(postKey)
+        
+        
+        
     }
+    
     
     override func viewWillAppear(animated: Bool) {
         
-        ToolFunction.retrievePlayerData(postRef, completion: {result in
+        ToolFunction.changedDataEvent(postRef, completion: {result in
             
-            NSLog("so luong :%i",result.count);
-        
+            NSLog("changed");
         
         });
+        
 //        refHandle = postRef.observeEventType(.Value, withBlock: { snapshot in
 //            let postDict = snapshot.value as! NSDictionary
 //
